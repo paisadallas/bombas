@@ -17,5 +17,11 @@ public class Contador : MonoBehaviour
     {
         tiempo -= Time.deltaTime;
         contador.text = " " + tiempo.ToString("f0");
+
+        if (tiempo <= 0)
+        {
+            Debug.Log("PierdeNivel");
+
+        }
     }
 }
