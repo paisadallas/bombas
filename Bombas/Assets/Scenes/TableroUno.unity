@@ -273,6 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arma: {fileID: 948463837}
+  contadorUno: {fileID: 1376298334}
 --- !u!4 &376441000
 Transform:
   m_ObjectHideFlags: 0
@@ -1290,6 +1291,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137157641398320920, guid: 2c253b0d4c829aa47a24bd97329188d1,
+        type: 3}
+      propertyPath: miContador
+      value: 
+      objectReference: {fileID: 1376298334}
+    - target: {fileID: 1137157641398320921, guid: 2c253b0d4c829aa47a24bd97329188d1,
+        type: 3}
+      propertyPath: m_AutoConfigureDistance
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c253b0d4c829aa47a24bd97329188d1, type: 3}

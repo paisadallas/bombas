@@ -11,7 +11,7 @@ public class Proyectil : MonoBehaviour
     private bool press;
     private float relaseDealy;
     private float disMax = 2f;
-    
+    public Contador miContador;
 
     private void Awake()
     {
@@ -49,6 +49,7 @@ public class Proyectil : MonoBehaviour
     {
         press = true;
         rb2d.isKinematic = true;
+        
     }
 
     private void OnMouseUp()
@@ -56,6 +57,8 @@ public class Proyectil : MonoBehaviour
         press = false;
         rb2d.isKinematic = false;
         StartCoroutine(Release());
+        miContador.finContador();
+      
     }
 
     private IEnumerator Release()

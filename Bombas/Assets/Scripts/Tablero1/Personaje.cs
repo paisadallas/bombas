@@ -6,6 +6,8 @@ public class Personaje : MonoBehaviour
 {
     public GameObject arma;
     private bool confirmarPos;
+    public Contador contadorUno;
+    private bool resetContador = true;
     void Start()
     {
         confirmarPos = false;   
@@ -18,6 +20,12 @@ public class Personaje : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             confirmarPos = true;
+            if (resetContador)
+            {
+                contadorUno.resetContador();
+                resetContador = false;
+            }
+
         }
         if (!confirmarPos) {
             confirmarPosicion();
@@ -44,8 +52,6 @@ public class Personaje : MonoBehaviour
         
         arma.transform.position = new Vector2(posicionX, posicionY);
          
-
     }
-
-  
+       
 }

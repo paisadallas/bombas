@@ -8,6 +8,7 @@ public class Burbujas : MonoBehaviour
     private BoxCollider2D bc2d;
     private Rigidbody2D rb2dItem;
     public GameObject ItemInterior;
+    private Transform transItem;
     [Range(1, 5)]
     public int resistencia;
 
@@ -23,14 +24,14 @@ public class Burbujas : MonoBehaviour
 
     void Update()
     {
-        
+       
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         bc2d = GetComponent<BoxCollider2D>();
         rb2dItem = ItemInterior.GetComponent<Rigidbody2D>();
         resistencia = resistencia - 1;
-        Debug.Log(resistencia); 
+       // Debug.Log(resistencia); 
         if (resistencia <= 0)
         {
             bc2d.enabled = false;
