@@ -6,12 +6,17 @@ using UnityEngine.UI;
 public class Contador : MonoBehaviour
 {
     public Text contador;
+    public GameObject proyectil;
+    private CircleCollider2D enableProyectil;
     private float tiempo = 10f;
     private bool estado;
     void Start()
     {
         contador.text = "" + tiempo;
         estado = true;
+        enableProyectil = proyectil.GetComponent<CircleCollider2D>();
+        enableProyectil.enabled = true;
+
     }
 
     public void finContador()
@@ -23,7 +28,8 @@ public class Contador : MonoBehaviour
     public void resetContador()
     {
         tiempo = 10f;
-
+        enableProyectil = proyectil.GetComponent<CircleCollider2D>();
+        enableProyectil.enabled = true;
     }
     // Update is called once per frame
     void Update()

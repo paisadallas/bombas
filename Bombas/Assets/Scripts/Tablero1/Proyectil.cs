@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Proyectil : MonoBehaviour
 {
    
@@ -22,12 +23,14 @@ public class Proyectil : MonoBehaviour
 
     }
     void Update()
-    {                   
+    {
         if (press)
         {
-            arrastrarBola();  
-        }                       
+            arrastrarBola();
+        }
     }
+
+  
 
     private void arrastrarBola()
     {
@@ -35,7 +38,8 @@ public class Proyectil : MonoBehaviour
         float distance = Vector2.Distance(mousePosition, slingRb.position);
         rb2d.position = mousePosition;
 
-        if(distance> disMax) {
+        if (distance > disMax)
+        {
             Vector2 direction = (mousePosition - slingRb.position).normalized;
             rb2d.position = slingRb.position + direction * disMax;
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Personaje : MonoBehaviour
 {
     public GameObject arma;
@@ -16,7 +17,14 @@ public class Personaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //confirmandoPosicion();
+                
+    }
 
+ 
+      
+    private void confirmandoPosicion()
+    {
         if (Input.GetMouseButtonDown(0))
         {
             confirmarPos = true;
@@ -27,14 +35,14 @@ public class Personaje : MonoBehaviour
             }
 
         }
-        if (!confirmarPos) {
-            confirmarPosicion();
+        if (!confirmarPos)
+        {
+            coordenadasPosicion();
         }
 
-        
     }
     
-    private void confirmarPosicion()
+    private void coordenadasPosicion()
     {
         float posicionX;
         float posicionY;
@@ -53,5 +61,6 @@ public class Personaje : MonoBehaviour
         arma.transform.position = new Vector2(posicionX, posicionY);
          
     }
-       
+
+    
 }
