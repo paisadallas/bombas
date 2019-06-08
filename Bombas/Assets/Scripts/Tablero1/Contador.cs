@@ -49,7 +49,7 @@ public class Contador : MonoBehaviour
 
             if (tiempo <= 0)
             {
-                Debug.Log("PierdeNivel");
+          //      Debug.Log("PierdeNivel");
 
             }
                  
