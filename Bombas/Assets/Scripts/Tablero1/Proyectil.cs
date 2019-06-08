@@ -15,17 +15,14 @@ public class Proyectil : MonoBehaviour
     private SpringJoint2D sj2d;
     private bool press;
     private float relaseDealy;
-    private float disMax = 2f;
-    public Contador miContador;
-    private bool enCapatula = true;
-    public GeneratorProyectil nuevoProyectil;
+    private float disMax = 2f;      
     private Transform coordenadaPiedra;
-    
+    public bool cargado;
     private void Start()
     {
         sj2d.enabled = true;
         coordenadaPiedra = GetComponent<Transform>();
-        
+        cargado = true;
     }
 
     private void Awake()
@@ -33,7 +30,9 @@ public class Proyectil : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         sj2d = GetComponent<SpringJoint2D>();
         slingRb = sj2d.connectedBody;
-        relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x          
+        relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x 
+       
+
     }
     void Update()
     {
@@ -53,6 +52,7 @@ public class Proyectil : MonoBehaviour
         {
             Vector2 direction = (mousePosition - slingRb.position).normalized;
             rb2d.position = slingRb.position + direction * disMax;
+            
         }
         else
         {
@@ -64,7 +64,7 @@ public class Proyectil : MonoBehaviour
     {
         press = true;
         rb2d.isKinematic = true;
-        
+        cargado = true;
 
     }
     // proyectil lanzado objeto lanzado
@@ -72,9 +72,9 @@ public class Proyectil : MonoBehaviour
     {
         press = false;
         rb2d.isKinematic = false;
-        StartCoroutine(Release());       
-        miContador.finContador();
-       nuevoProyectil.crearProyectil(true,coordenadaPiedra.position.x);   //nuevo proyectil y nueva posicion
+        StartCoroutine(Release());
+        cargado = false;     
+     //  nuevoProyectil.crearProyectil(true,coordenadaPiedra.position.x);   //nuevo proyectil y nueva posicion
         
     }
     // permite arrastrar mi proyectil
@@ -89,7 +89,8 @@ public class Proyectil : MonoBehaviour
     {
         if (otro.gameObject.tag == "suelo")
         {
-           
+           // Debug.Log("Destruido");
+            Destroy(this.gameObject);
         }
 
 

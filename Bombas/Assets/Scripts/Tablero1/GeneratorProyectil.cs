@@ -7,33 +7,42 @@ using UnityEngine;
 public class GeneratorProyectil : MonoBehaviour
 {
 
-   public float waitTime = 3;
-    float x, y;
-    WaitForSecondsRealtime waitForSecondsRealtime;
-    public GameObject armaBasica;
-    IEnumerator DoWait(float x)
-    {
-     //   Debug.Log("Generando... ");
+    //public float waitTime = 3;
+    //float x, y;
+    //WaitForSecondsRealtime waitForSecondsRealtime;
+    //public GameObject armaBasica;
+    public Proyectil checarestado;
+    //IEnumerator DoWait()
+    //{
+    // //   Debug.Log("Generando... ");
 
-        if (waitForSecondsRealtime == null)
-            waitForSecondsRealtime = new WaitForSecondsRealtime(waitTime);
-        else
-            waitForSecondsRealtime.waitTime = waitTime;
-        yield return waitForSecondsRealtime;
-        Instantiate(armaBasica, new Vector3(x,-7,73), Quaternion.identity);
-       // Debug.Log("exito!!");
-    }
+    //    if (waitForSecondsRealtime == null)
+    //        waitForSecondsRealtime = new WaitForSecondsRealtime(waitTime);
+    //    else
+    //        waitForSecondsRealtime.waitTime = waitTime;
+    //    yield return waitForSecondsRealtime;
+    //    Instantiate(armaBasica, new Vector3(0,-7,73), Quaternion.identity);
+    //   // Debug.Log("exito!!");
+    //}
 
-     public void crearProyectil(bool nuevo,float x)
+    // public void crearProyectil(bool nuevo)
+    //{
+    //    nuevo = checarestado.cargado;
+    //    if (nuevo)
+    //    {
+    //        Debug.Log("entrando!!!!");
+    //        StartCoroutine(DoWait());
+    //    }
+    //}
+
+
+    void OnTriggerEnter2D(Collider2D otro)
     {
-        if (nuevo)
+        if (otro.tag == "Proyectiles")
         {
-            StartCoroutine(DoWait(x));
+             Debug.Log("ESTADO?");                  
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("exito");
+
     }
 }

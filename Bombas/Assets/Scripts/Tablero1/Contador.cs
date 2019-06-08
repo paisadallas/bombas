@@ -16,7 +16,7 @@ public class Contador : MonoBehaviour
         estado = true;
         enableProyectil = proyectil.GetComponent<CircleCollider2D>();
         enableProyectil.enabled = true;
-
+       
     }
 
     public void finContador()
