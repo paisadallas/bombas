@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+//*** NOTA: NO PUEDO DESTRUIR LOS OBJETOS DEBIDO A QUE ESTOY USANDO LAS FUNCIONES DE OTRAS CLASES
+// AL CREAR EL PREFAB NO ME PERMITE USAR LOS COMPONENTES PUBLICOS YA QUE LOS SCRIPT NO SE INICIALIZAN EN LE PREFABS
+
+
 public class Proyectil : MonoBehaviour
 {
    
@@ -16,11 +20,12 @@ public class Proyectil : MonoBehaviour
     private bool enCapatula = true;
     public GeneratorProyectil nuevoProyectil;
     private Transform coordenadaPiedra;
-
+    
     private void Start()
     {
         sj2d.enabled = true;
         coordenadaPiedra = GetComponent<Transform>();
+        
     }
 
     private void Awake()
@@ -28,8 +33,7 @@ public class Proyectil : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         sj2d = GetComponent<SpringJoint2D>();
         slingRb = sj2d.connectedBody;
-        relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x
-        
+        relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x          
     }
     void Update()
     {
@@ -71,8 +75,7 @@ public class Proyectil : MonoBehaviour
         StartCoroutine(Release());       
         miContador.finContador();
        nuevoProyectil.crearProyectil(true,coordenadaPiedra.position.x);   //nuevo proyectil y nueva posicion
-        Debug.Log(coordenadaPiedra.position.x);
-
+        
     }
     // permite arrastrar mi proyectil
     private IEnumerator Release()
@@ -81,6 +84,14 @@ public class Proyectil : MonoBehaviour
         sj2d.enabled = false;
               
     }
-   
-   
+
+    void OnTriggerEnter2D(Collider2D otro)
+    {
+        if (otro.gameObject.tag == "suelo")
+        {
+           
+        }
+
+
+    }
 }

@@ -9,6 +9,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
 
     public GameObject disparador;
     private Transform transDisparador,canvas;
+    public Contador miContador;
     
     [Range(0, 10)]
     public float delay;
@@ -42,7 +43,8 @@ public class Arrastrar : MonoBehaviour, IDragHandler
         transDisparador.position = new Vector2(posicion-delay, -7);
         disparador.SetActive(true);
         Destroy(gameObject);
-        Debug.Log("Ha sido soltado");
+        miContador.resetContador();
+     //   Debug.Log("Ha sido soltado");
     }
 
     private void coordenadasPosicion(float posicionX)

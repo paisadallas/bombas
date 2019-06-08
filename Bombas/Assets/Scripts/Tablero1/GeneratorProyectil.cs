@@ -13,7 +13,7 @@ public class GeneratorProyectil : MonoBehaviour
     public GameObject armaBasica;
     IEnumerator DoWait(float x)
     {
-        Debug.Log("Generando... ");
+     //   Debug.Log("Generando... ");
 
         if (waitForSecondsRealtime == null)
             waitForSecondsRealtime = new WaitForSecondsRealtime(waitTime);
@@ -21,7 +21,7 @@ public class GeneratorProyectil : MonoBehaviour
             waitForSecondsRealtime.waitTime = waitTime;
         yield return waitForSecondsRealtime;
         Instantiate(armaBasica, new Vector3(x,-7,73), Quaternion.identity);
-        Debug.Log("exito!!");
+       // Debug.Log("exito!!");
     }
 
      public void crearProyectil(bool nuevo,float x)
@@ -32,5 +32,8 @@ public class GeneratorProyectil : MonoBehaviour
         }
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("exito");
+    }
 }

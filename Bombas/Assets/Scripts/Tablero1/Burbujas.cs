@@ -11,12 +11,7 @@ public class Burbujas : MonoBehaviour
     private Transform transItem;
     [Range(1, 5)]
     public int resistencia;
-
-    private void Awake()
-    {
-         
-    }
-   
+     
     void Start()
     {
         resistencia = 4; 

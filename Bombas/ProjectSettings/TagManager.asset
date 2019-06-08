@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Burbuja
   - suelo
+  - Proyectiles
   layers:
   - Default
   - TransparentFX
