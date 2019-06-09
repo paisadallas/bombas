@@ -18,6 +18,7 @@ public class Proyectil : MonoBehaviour
     private float disMax = 2f;      
     private Transform coordenadaPiedra;
     public bool cargado;
+    private float posX;
     private void Start()
     {
         sj2d.enabled = true;
@@ -47,7 +48,7 @@ public class Proyectil : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(mousePosition, slingRb.position);
         rb2d.position = mousePosition;
-
+        posX = mousePosition.x;
         if (distance > disMax)
         {
             Vector2 direction = (mousePosition - slingRb.position).normalized;
@@ -87,6 +88,14 @@ public class Proyectil : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D otro)
     {
+        //Generamos Nuevo proyectil
+        if (otro.gameObject.tag == "Proyectiles")
+        {
+        
+            Instantiate(this.gameObject, new Vector3(posX, -7, 73), Quaternion.identity);
+        }
+
+
         if (otro.gameObject.tag == "suelo")
         {
            // Debug.Log("Destruido");
