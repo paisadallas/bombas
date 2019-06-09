@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//*** NOTA: NO PUEDO DESTRUIR LOS OBJETOS DEBIDO A QUE ESTOY USANDO LAS FUNCIONES DE OTRAS CLASES
-// AL CREAR EL PREFAB NO ME PERMITE USAR LOS COMPONENTES PUBLICOS YA QUE LOS SCRIPT NO SE INICIALIZAN EN LE PREFABS
-
-
 public class Proyectil : MonoBehaviour
 {
    
@@ -18,14 +14,15 @@ public class Proyectil : MonoBehaviour
     private float disMax = 2f;      
     private Transform coordenadaPiedra;
     public bool cargado;
-    private float posX;
+    public float posX;
 
     private void Start()
     {
         sj2d.enabled = true;
         coordenadaPiedra = GetComponent<Transform>();
         cargado = true;
-        
+        rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
+        rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
     }
 
     private void Awake()
@@ -69,6 +66,7 @@ public class Proyectil : MonoBehaviour
         rb2d.isKinematic = true;
         cargado = true;
         posX = coordenadaPiedra.transform.position.x;
+        
 
     }
     // proyectil lanzado objeto lanzado
@@ -78,6 +76,7 @@ public class Proyectil : MonoBehaviour
         rb2d.isKinematic = false;
         StartCoroutine(Release());
         cargado = false;
+        rb2d.constraints = RigidbodyConstraints2D.None;  // proyectil puede girar
       //  Debug.Log("Posicion X= " + posX);
         
     }
@@ -88,23 +87,5 @@ public class Proyectil : MonoBehaviour
         sj2d.enabled = false;
               
     }
-
-    //void OnTriggerEnter2D(Collider2D otro)
-    //{
-    //    //Generamos Nuevo proyectil
-    //    if (otro.gameObject.tag == "Proyectiles")
-    //    {
-        
-    //        Instantiate(gameObject, new Vector3(posX, -7, 0), Quaternion.identity);
-    //    }
-
-
-    //    if (otro.gameObject.tag == "suelo")
-    //    {
-    //       // Debug.Log("Destruido");
-    //        Destroy(gameObject);
-    //    }
-
-
-    //}
+    
 }
