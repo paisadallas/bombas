@@ -19,11 +19,13 @@ public class Proyectil : MonoBehaviour
     private Transform coordenadaPiedra;
     public bool cargado;
     private float posX;
+
     private void Start()
     {
         sj2d.enabled = true;
         coordenadaPiedra = GetComponent<Transform>();
         cargado = true;
+        
     }
 
     private void Awake()
@@ -48,7 +50,7 @@ public class Proyectil : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(mousePosition, slingRb.position);
         rb2d.position = mousePosition;
-        posX = mousePosition.x;
+       // posX = mousePosition.x;
         if (distance > disMax)
         {
             Vector2 direction = (mousePosition - slingRb.position).normalized;
@@ -66,6 +68,7 @@ public class Proyectil : MonoBehaviour
         press = true;
         rb2d.isKinematic = true;
         cargado = true;
+        posX = coordenadaPiedra.transform.position.x;
 
     }
     // proyectil lanzado objeto lanzado
@@ -74,8 +77,8 @@ public class Proyectil : MonoBehaviour
         press = false;
         rb2d.isKinematic = false;
         StartCoroutine(Release());
-        cargado = false;     
-     //  nuevoProyectil.crearProyectil(true,coordenadaPiedra.position.x);   //nuevo proyectil y nueva posicion
+        cargado = false;
+        Debug.Log("Posicion X= " + posX);
         
     }
     // permite arrastrar mi proyectil
@@ -92,7 +95,7 @@ public class Proyectil : MonoBehaviour
         if (otro.gameObject.tag == "Proyectiles")
         {
         
-            Instantiate(gameObject, new Vector3(posX, -7, 73), Quaternion.identity);
+            Instantiate(gameObject, new Vector3(posX, -7, 0), Quaternion.identity);
         }
 
 

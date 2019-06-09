@@ -542,8 +542,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770874704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: -11.07, z: 0}
-  m_LocalScale: {x: 14.286842, y: 0.8044888, z: 1.6348}
+  m_LocalPosition: {x: -3.6, y: -15.35, z: 0}
+  m_LocalScale: {x: 38.232925, y: 0.8044888, z: 1.6348}
   m_Children: []
   m_Father: {fileID: 851858699}
   m_RootOrder: 2
@@ -586,8 +586,10 @@ GameObject:
   - component: {fileID: 785820954}
   - component: {fileID: 785820953}
   - component: {fileID: 785820956}
+  - component: {fileID: 785820958}
+  - component: {fileID: 785820957}
   m_Layer: 8
-  m_Name: piedra
+  m_Name: '@piedra'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,6 +704,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5384616, y: 1.5384616}
   m_EdgeRadius: 0
+--- !u!114 &785820957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785820952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e7794dec751104891555443dd893ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &785820958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785820952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd85347bee277047857867962a1b9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851858698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1200,7 @@ Transform:
   m_GameObject: {fileID: 1365587007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.44, y: -10.37, z: 0}
-  m_LocalScale: {x: 14.2868395, y: 0.4424695, z: 1.6348}
+  m_LocalScale: {x: 18.21572, y: 0.4424695, z: 1.6348}
   m_Children: []
   m_Father: {fileID: 851858699}
   m_RootOrder: 5
