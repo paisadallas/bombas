@@ -78,7 +78,7 @@ public class Proyectil : MonoBehaviour
         rb2d.isKinematic = false;
         StartCoroutine(Release());
         cargado = false;
-        Debug.Log("Posicion X= " + posX);
+      //  Debug.Log("Posicion X= " + posX);
         
     }
     // permite arrastrar mi proyectil
@@ -89,22 +89,22 @@ public class Proyectil : MonoBehaviour
               
     }
 
-    void OnTriggerEnter2D(Collider2D otro)
-    {
-        //Generamos Nuevo proyectil
-        if (otro.gameObject.tag == "Proyectiles")
-        {
+    //void OnTriggerEnter2D(Collider2D otro)
+    //{
+    //    //Generamos Nuevo proyectil
+    //    if (otro.gameObject.tag == "Proyectiles")
+    //    {
         
-            Instantiate(gameObject, new Vector3(posX, -7, 0), Quaternion.identity);
-        }
+    //        Instantiate(gameObject, new Vector3(posX, -7, 0), Quaternion.identity);
+    //    }
 
 
-        if (otro.gameObject.tag == "suelo")
-        {
-           // Debug.Log("Destruido");
-            Destroy(gameObject);
-        }
+    //    if (otro.gameObject.tag == "suelo")
+    //    {
+    //       // Debug.Log("Destruido");
+    //        Destroy(gameObject);
+    //    }
 
 
-    }
+    //}
 }

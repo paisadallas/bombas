@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1334912943978539729}
   - component: {fileID: 1334912943978539734}
   - component: {fileID: 1334912943978539735}
+  - component: {fileID: 2132235224811008508}
   m_Layer: 8
   m_Name: '@rockExample'
   m_TagString: Untagged
@@ -153,3 +154,16 @@ SpringJoint2D:
   m_Distance: 0.38
   m_DampingRatio: 0
   m_Frequency: 5.11
+--- !u!114 &2132235224811008508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334912943978539733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb87df5a56d2344e9997529a281cf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disparos: 10
