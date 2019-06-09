@@ -10,14 +10,15 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     public GameObject disparador;
     private Transform transDisparador,canvas;
     public Contador miContador;
+    
        
     [Range(0, 10)]
     public float delay;
     
     void Start()
     {
-        disparador.SetActive(false);
-        canvas = GetComponent<Transform>();
+        disparador.SetActive(false);  // inicialmente Desactivado
+        canvas = GetComponent<Transform>();    //mi disparador
       //  canvas.position = new Vector3(0, -7, 0);
         
     }
@@ -26,8 +27,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     // Arrastrar mi objeto
     public void OnDrag(PointerEventData eventData)
    
-    {
-        
+    {           
         Vector3 miPosicion = Camera.main.ScreenToWorldPoint(eventData.position);
          
         coordenadasPosicion(miPosicion.x);

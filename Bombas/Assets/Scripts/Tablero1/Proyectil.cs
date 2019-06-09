@@ -92,14 +92,14 @@ public class Proyectil : MonoBehaviour
         if (otro.gameObject.tag == "Proyectiles")
         {
         
-            Instantiate(this.gameObject, new Vector3(posX, -7, 73), Quaternion.identity);
+            Instantiate(gameObject, new Vector3(posX, -7, 73), Quaternion.identity);
         }
 
 
         if (otro.gameObject.tag == "suelo")
         {
            // Debug.Log("Destruido");
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
 
