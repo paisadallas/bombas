@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//****** Aplicamos a nuetra Camara**************
+
 public class TableroUno : MonoBehaviour
 {
     [Range(0,10)]
@@ -36,6 +38,12 @@ public class TableroUno : MonoBehaviour
 
             Debug.Log("Haz Ganado!!");
         }
+
+    }
+
+    public void PerderNivel()
+    {
+        Debug.Log("Haz perdido Nivel");
 
     }
 }

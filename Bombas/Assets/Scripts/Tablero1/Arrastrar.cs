@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Arrastrar : MonoBehaviour, IDragHandler 
 {
     //NOTA ----  Aplicar scrip a mi imagen y no a mi canvas
+    // ---- los canvas tiene un EventSystem
 
     public GameObject disparador;
     private Transform transDisparador,canvas;

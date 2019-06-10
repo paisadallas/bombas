@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//*** no se aplica a ningun objeto *****
+
 public class Puntos 
 {
 

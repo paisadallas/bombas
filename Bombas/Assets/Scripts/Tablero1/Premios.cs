@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//***** Aplicamos a nuestro inten interior de la burbuja *****
+
 public class Premios : MonoBehaviour
 {
     public TableroUno totalPuntos;

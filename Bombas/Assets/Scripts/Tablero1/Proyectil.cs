@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// Se aplica a nuestro proyectil (al igual que GenerarProyectil.cs)
 public class Proyectil : MonoBehaviour
 {
    

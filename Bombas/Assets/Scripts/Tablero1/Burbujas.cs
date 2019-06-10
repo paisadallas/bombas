@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//**** Aplicamos a nuestras burbujas **********
+
 public class Burbujas : MonoBehaviour
 {
     //private Rigidbody2D rb2d;

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//***** Se aplica a nuestro proyectil (roca)***
+
 public class GenerarProyectil : MonoBehaviour
 {
     [Range(1, 10)]

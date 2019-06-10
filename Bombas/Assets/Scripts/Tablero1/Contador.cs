@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// Se aplica a un GameObjet Contador el cual contiene un contador con un Text(Script)
 public class Contador : MonoBehaviour
 {
     public Text contador;
+    public TableroUno tablero;
    // public GameObject proyectil;
    // private CircleCollider2D enableProyectil;
     private float tiempo = 10f;
@@ -53,10 +56,11 @@ public class Contador : MonoBehaviour
 
             if (tiempo <= 0)
             {
-          //      Debug.Log("PierdeNivel");
+            //      Debug.Log("PierdeNivel");
+            tablero.PerderNivel();
+            finContador(false);
 
-            }
-                 
+            }     
    
     }
 

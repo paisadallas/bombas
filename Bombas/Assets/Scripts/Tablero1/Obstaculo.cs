@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//** Se aplica a nuestros obstaculos ****
 public class Obstaculo : MonoBehaviour
 {
    // private BoxCollider2D bc2d;
