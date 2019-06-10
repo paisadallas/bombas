@@ -5,9 +5,9 @@ using UnityEngine;
 public class GenerarProyectil : MonoBehaviour
 {
     [Range(1, 10)]
-    public int disparos;
-    int misDisparos = 0;
+    public int disparos;     
     public Proyectil posX;
+    public TableroUno checar;
     void OnTriggerEnter2D(Collider2D otro)
     {
         //Generamos Nuevo proyectil
@@ -28,7 +28,8 @@ public class GenerarProyectil : MonoBehaviour
     void DisparosDispoblibles(int misDisparos)
     {
         misDisparos = misDisparos - NoProyectiles.disparos;
-        Debug.Log("disponibles =" + misDisparos);
-
+       // Debug.Log("disponibles =" + misDisparos);
+        checar.perder(misDisparos);
     }
+      
 }

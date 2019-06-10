@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Premios : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TableroUno totalPuntos;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        if(collision.gameObject.tag == "Burbuja")
+        {
+            Puntos puntos = new Puntos();
+            Debug.Log("Puntos=" + Puntos.logros);
+            totalPuntos.winnerLevel(Puntos.logros); //Estado del nivel
+        }
+    }       
 }

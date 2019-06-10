@@ -2473,5 +2473,15 @@ PrefabInstance:
       propertyPath: disparos
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2132235224811008508, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: posX
+      value: 
+      objectReference: {fileID: 603220659}
+    - target: {fileID: 2132235224811008508, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: checar
+      value: 
+      objectReference: {fileID: 967180920}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aabb0adcf4f9fbd4f9348e68a23d32ad, type: 3}
