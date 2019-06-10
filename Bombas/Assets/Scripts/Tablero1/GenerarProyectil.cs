@@ -10,12 +10,18 @@ public class GenerarProyectil : MonoBehaviour
     public int disparos;     
     public Proyectil posX;
     public TableroUno checar;
+    public GameObject disparador;
+    private Transform coordenadasX; 
+    private void Start()
+    {
+        coordenadasX = disparador.GetComponent<Transform>();
+    }
     void OnTriggerEnter2D(Collider2D otro)
     {
         //Generamos Nuevo proyectil
         if (otro.gameObject.tag == "Proyectiles" && (disparos-1) > NoProyectiles.disparos)
         {               
-            Instantiate(gameObject, new Vector3(posX.posX, -7, 0), Quaternion.identity);              
+            Instantiate(gameObject, new Vector3(disparador.transform.position.x+0.7f, -7, 0), Quaternion.identity);  //0.7 Delay posicion            
         }
         // Destruimos los disparos
         if (otro.gameObject.tag == "suelo")

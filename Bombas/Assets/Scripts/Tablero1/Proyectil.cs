@@ -12,15 +12,13 @@ public class Proyectil : MonoBehaviour
     private bool press;
     private float relaseDealy;
     private float disMax = 2f;      
-    private Transform coordenadaPiedra;
-    public bool cargado;
-    public float posX;
-
+    private Transform coordenadaPiedra;      
+    public bool cargado; 
     private void Start()
     {
         sj2d.enabled = true;
-        coordenadaPiedra = GetComponent<Transform>();
-        cargado = true;
+        coordenadaPiedra = GetComponent<Transform>();      
+        cargado = true;     
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
     }
@@ -31,8 +29,6 @@ public class Proyectil : MonoBehaviour
         sj2d = GetComponent<SpringJoint2D>();
         slingRb = sj2d.connectedBody;
         relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x 
-       
-
     }
     void Update()
     {
@@ -47,27 +43,19 @@ public class Proyectil : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float distance = Vector2.Distance(mousePosition, slingRb.position);
         rb2d.position = mousePosition;
-       // posX = mousePosition.x;
+    
         if (distance > disMax)
         {
             Vector2 direction = (mousePosition - slingRb.position).normalized;
-            rb2d.position = slingRb.position + direction * disMax;
-            
-        }
-        else
-        {
-
-        }
+            rb2d.position = slingRb.position + direction * disMax;         
+        }      
     }
     //proyectil en disparador  objeto en catapulta
     private void OnMouseDown()
     {
         press = true;
         rb2d.isKinematic = true;
-        cargado = true;
-        posX = coordenadaPiedra.transform.position.x;
-        
-
+        cargado = true;           
     }
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()
@@ -77,15 +65,13 @@ public class Proyectil : MonoBehaviour
         StartCoroutine(Release());
         cargado = false;
         rb2d.constraints = RigidbodyConstraints2D.None;  // proyectil puede girar
-      //  Debug.Log("Posicion X= " + posX);
         
     }
     // permite arrastrar mi proyectil
     private IEnumerator Release()
     {
         yield return new WaitForSeconds(relaseDealy);
-        sj2d.enabled = false;
-              
+        sj2d.enabled = false;                
     }
     
 }

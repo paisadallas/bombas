@@ -2559,12 +2559,12 @@ PrefabInstance:
     - target: {fileID: 1334912943978539732, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.35
+      value: 0.727
       objectReference: {fileID: 0}
     - target: {fileID: 1334912943978539732, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7600002
+      value: 0.138
       objectReference: {fileID: 0}
     - target: {fileID: 1334912943978539732, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
@@ -2619,13 +2619,33 @@ PrefabInstance:
     - target: {fileID: 1334912943978539729, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
       propertyPath: m_Radius
-      value: 0.36
+      value: 0.59170866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334912943978539729, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334912943978539729, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.34756243
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334912943978539729, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3921218
       objectReference: {fileID: 0}
     - target: {fileID: 1334912943978539735, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 453783312}
+    - target: {fileID: 1334912943978539735, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_Frequency
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2132235224811008508, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
         type: 3}
       propertyPath: generado
@@ -2646,5 +2666,21 @@ PrefabInstance:
       propertyPath: checar
       value: 
       objectReference: {fileID: 967180920}
+    - target: {fileID: 2132235224811008508, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: disparador
+      value: 
+      objectReference: {fileID: 206936901}
+    - target: {fileID: 1334912943978539731, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7ec58589b2f8af438d4f315027c3d62,
+        type: 3}
+    - target: {fileID: 1334912943978539731, guid: aabb0adcf4f9fbd4f9348e68a23d32ad,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aabb0adcf4f9fbd4f9348e68a23d32ad, type: 3}
