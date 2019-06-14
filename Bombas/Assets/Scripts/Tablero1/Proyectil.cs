@@ -18,11 +18,11 @@ public class Proyectil : MonoBehaviour
     {
         sj2d.enabled = true;
         coordenadaPiedra = GetComponent<Transform>();      
-        cargado = true;     
+        cargado = true;
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-        press = true;
+        //press = true;
     }
 
     private void Awake()
@@ -35,7 +35,7 @@ public class Proyectil : MonoBehaviour
     }
     void Update()
     {
-        if (press && cargado == true)
+        if (press && cargado==true)
         {
             arrastrarBola();
         }
@@ -43,27 +43,33 @@ public class Proyectil : MonoBehaviour
     
     private void arrastrarBola()
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        float distance = Vector2.Distance(mousePosition, slingRb.position);
-        rb2d.position = mousePosition;
-    
-        if (distance > disMax)
+        if (press)
         {
-            Vector2 direction = (mousePosition - slingRb.position).normalized;
-            rb2d.position = slingRb.position + direction * disMax;         
-        }      
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            float distance = Vector2.Distance(mousePosition, slingRb.position);
+            rb2d.position = mousePosition;
+
+            if (distance > disMax)
+            {
+                Vector2 direction = (mousePosition - slingRb.position).normalized;
+                rb2d.position = slingRb.position + direction * disMax;
+            }
+
+        }
+          
     }
     //proyectil en disparador  objeto en catapulta
     
     private void OnMouseDown()
     {
-        if (press)   //solo se puede lanzar una vez
-        {
-            
-            rb2d.isKinematic = true;
-            cargado = true;
-        }
-       
+             rb2d.isKinematic = true;
+        //cargado = false;
+        press = true;
+
+
+
+
+
     }
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()

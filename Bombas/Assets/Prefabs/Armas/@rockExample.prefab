@@ -101,9 +101,9 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &1334912943978539729
 CircleCollider2D:
@@ -118,9 +118,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.040459037, y: 0.13008362}
+  m_Offset: {x: -0.008816123, y: 0.005269766}
   serializedVersion: 2
-  m_Radius: 0.537344
+  m_Radius: 0.52503836
 --- !u!114 &1334912943978539734
 MonoBehaviour:
   m_ObjectHideFlags: 0
