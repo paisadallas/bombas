@@ -12,6 +12,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     private Transform transDisparador,canvas;
     public Contador miContador;
     private float rangoX=3.0f;
+    private float rangoY;
        
     [Range(0, 10)]
     public float delay;
@@ -20,8 +21,8 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     {
         disparador.SetActive(false);  // inicialmente Desactivado
         canvas = GetComponent<Transform>();    //mi disparador
-        canvas.position = new Vector3(0, -7, 0);      //posicion inicial
-        
+        //  canvas.position = new Vector3(0, -7, 0);      //posicion inicial
+        rangoY = canvas.position.y;
     }
 
 
@@ -41,7 +42,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
         canvas = GetComponent<Transform>();
         float posicion = canvas.position.x;
         transDisparador = disparador.GetComponent<Transform>();
-        transDisparador.position = new Vector2(posicion-delay, -7);
+        transDisparador.position = new Vector2(posicion-delay, -7.0f);   //rango Y = -7.0
         disparador.SetActive(true);
         Destroy(gameObject);
         miContador.resetContador();
@@ -60,6 +61,6 @@ public class Arrastrar : MonoBehaviour, IDragHandler
             posicionX = rangoX;
         }
 
-        transform.position = new Vector3(posicionX, -7,0);  
+        transform.position = new Vector3(posicionX, rangoY);  
     }
 }

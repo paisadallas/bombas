@@ -21,6 +21,8 @@ public class Proyectil : MonoBehaviour
         cargado = true;     
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+        press = true;
     }
 
     private void Awake()
@@ -29,13 +31,14 @@ public class Proyectil : MonoBehaviour
         sj2d = GetComponent<SpringJoint2D>();
         slingRb = sj2d.connectedBody;
         relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x 
+      
     }
     void Update()
     {
-        if (press)
+        if (press && cargado == true)
         {
             arrastrarBola();
-        }                
+        }
     }
     
     private void arrastrarBola()
@@ -51,11 +54,16 @@ public class Proyectil : MonoBehaviour
         }      
     }
     //proyectil en disparador  objeto en catapulta
+    
     private void OnMouseDown()
     {
-        press = true;
-        rb2d.isKinematic = true;
-        cargado = true;           
+        if (press)   //solo se puede lanzar una vez
+        {
+            
+            rb2d.isKinematic = true;
+            cargado = true;
+        }
+       
     }
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()
@@ -65,7 +73,7 @@ public class Proyectil : MonoBehaviour
         StartCoroutine(Release());
         cargado = false;
         rb2d.constraints = RigidbodyConstraints2D.None;  // proyectil puede girar
-        
+
     }
     // permite arrastrar mi proyectil
     private IEnumerator Release()

@@ -21,7 +21,7 @@ public class GenerarProyectil : MonoBehaviour
         //Generamos Nuevo proyectil
         if (otro.gameObject.tag == "Proyectiles" && (disparos-1) > NoProyectiles.disparos)
         {               
-            Instantiate(gameObject, new Vector3(disparador.transform.position.x+0.7f, -7, 0), Quaternion.identity);  //0.7 Delay posicion            
+            Instantiate(gameObject, new Vector3(disparador.transform.position.x+0.35f, -7, 0), Quaternion.identity);  //0.35 Delay posicion            
         }
         // Destruimos los disparos
         if (otro.gameObject.tag == "suelo")
