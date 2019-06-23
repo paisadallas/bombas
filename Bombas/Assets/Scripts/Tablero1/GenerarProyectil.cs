@@ -11,7 +11,8 @@ public class GenerarProyectil : MonoBehaviour
     public Proyectil posX;
     public TableroUno checar;
     public GameObject disparador;
-    private Transform coordenadasX; 
+    private Transform coordenadasX;
+    
     private void Start()
     {
         coordenadasX = disparador.GetComponent<Transform>();
