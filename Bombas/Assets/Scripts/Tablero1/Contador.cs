@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+ //*********CUENTA REGRESIVA**********
 // Se aplica a un GameObjet Contador el cual contiene un contador con un Text(Script)
 public class Contador : MonoBehaviour
 {
     public Text contador;
-    public TableroUno tablero;
-   // public GameObject proyectil;
-   // private CircleCollider2D enableProyectil;
+    public TableroUno tablero; 
     private float tiempo = 10f;
     private bool estado;
     public Proyectil miProyectil;
     void Start()
     {
         contador.text = "" + tiempo;
-        estado = true;
-        //enableProyectil = proyectil.GetComponent<CircleCollider2D>();
-        //enableProyectil.enabled = true;
-       
+        estado = true;        
     }
 
     public void finContador(bool fin)
@@ -34,9 +29,7 @@ public class Contador : MonoBehaviour
 
     public void resetContador()
     {
-        tiempo = 10f;
-        //enableProyectil = proyectil.GetComponent<CircleCollider2D>();
-        //enableProyectil.enabled = true;
+        tiempo = 10f;     
     }
     // Update is called once per frame
     void Update()
@@ -55,8 +48,8 @@ public class Contador : MonoBehaviour
             contador.text = " " + tiempo.ToString("f0");
 
             if (tiempo <= 0)
-            {
-            //      Debug.Log("PierdeNivel");
+            {           
+            //Perdemos nivel si no ubicamos
             tablero.PerderNivel();
             finContador(false);
 

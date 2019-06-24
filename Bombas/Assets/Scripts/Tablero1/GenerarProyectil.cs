@@ -27,7 +27,7 @@ public class GenerarProyectil : MonoBehaviour
         // Destruimos los disparos
         if (otro.gameObject.tag == "suelo")
         {
-            NoProyectiles proyectiles = new NoProyectiles();
+            NoProyectiles proyectiles = new NoProyectiles(); //Creamos nuevo proyectil
             // Debug.Log("Destruido");
             DisparosDispoblibles(disparos);
             Destroy(gameObject);

@@ -64,12 +64,7 @@ public class Proyectil : MonoBehaviour
     {
              rb2d.isKinematic = true;
         //cargado = false;
-        press = true;
-
-
-
-
-
+        press = true; 
     }
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()

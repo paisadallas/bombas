@@ -7,8 +7,14 @@ public class Obstaculo : MonoBehaviour
 {
    // private BoxCollider2D bc2d;
     private Rigidbody2D rb2d;
+    private PolygonCollider2D pc2d;
     [Range(1, 5)]
     public int resistencia;
+
+    private void Start()
+    {
+        pc2d = GetComponent<PolygonCollider2D>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,7 +24,8 @@ public class Obstaculo : MonoBehaviour
         // Debug.Log(resistencia); 
         if (resistencia <= 0)
         {
-           // bc2d.enabled = false;
+            // bc2d.enabled = false;
+            pc2d.isTrigger = true;
             rb2d.bodyType = RigidbodyType2D.Dynamic;
             
         }
