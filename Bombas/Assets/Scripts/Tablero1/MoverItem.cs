@@ -26,7 +26,7 @@ public class MoverItem : MonoBehaviour
 
         if (cc2dItem.isTrigger)
         {
-            Debug.Log("Mover Item");
+           // Debug.Log("Mover Item");
             // Pos rigiBody2D
             transItem.position = Vector3.Lerp(transItem.position, posEnd, 0.1f);    //transladamos mi objeto
         }

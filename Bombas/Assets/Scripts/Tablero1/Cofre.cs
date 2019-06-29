@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//***** va en mi ItemInterior *******
+//***** Se aplica en mi ItemInterior *******
 
 public class Cofre : MonoBehaviour
-{
-    int NoPuntos;    
+{   
+    [Range(0,20)]
+    public int NoPuntos;    
     private void Start()
     {
         NoPuntos = 10;
@@ -18,12 +19,16 @@ public class Cofre : MonoBehaviour
 
         if (otro.gameObject.tag == "Logro")
         {
+            Debug.Log("colision");
             for (int i = 0; i < NoPuntos; i++)
             {
-                Marcador miMarcador = new Marcador();
+                // Marcador miMarcador = new Marcador(); 
 
+                Marcador miMarcador = gameObject.AddComponent<Marcador>();  //Forma correcta de hacerlo
             } 
         }
+
+        //Destroy(gameObject);    //Destruimos nuestro Item Interior
     }
 
     

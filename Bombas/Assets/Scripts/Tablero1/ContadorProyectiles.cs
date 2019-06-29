@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//**** Aplicamos al canvas NoProyectiles (cuenta el numero de proyectiles dispobibles) *****
 public class ContadorProyectiles : MonoBehaviour
 {
     public Text contador;

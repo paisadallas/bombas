@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//**** Se aplica a nuestros Objestos (Obstaculos, ItemInteriores)
+//**** Se aplica a nuestros Objestos (Obstaculos)
 
 public class DestruirObjeto : MonoBehaviour
 {

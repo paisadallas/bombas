@@ -23,6 +23,7 @@ public class ContadorPuntos : MonoBehaviour
     void Update()
     {       
         Conteo(marcador);
+        Debug.Log(Marcador.miMarcador);
     }
 
     private void Conteo(float marcador)
