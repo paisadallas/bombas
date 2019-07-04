@@ -10,26 +10,20 @@ public class Cofre : MonoBehaviour
     public int NoPuntos;    
     private void Start()
     {
-        NoPuntos = 10;
-       
+        NoPuntos = 10;               
     }
 
     void OnTriggerEnter2D(Collider2D otro)
-    {
-
+    {                         
         if (otro.gameObject.tag == "Logro")
-        {
-            Debug.Log("colision");
+        {                 
             for (int i = 0; i < NoPuntos; i++)
             {
                 // Marcador miMarcador = new Marcador(); 
-
-                Marcador miMarcador = gameObject.AddComponent<Marcador>();  //Forma correcta de hacerlo
+               Marcador miMarcador = gameObject.AddComponent<Marcador>();  //Forma correcta de hacerlo
             } 
-        }
-
-        //Destroy(gameObject);    //Destruimos nuestro Item Interior
-    }
-
-    
+            Puntos winnerPuntos = new Puntos();    //Puntos para ganar Level
+            Destroy(gameObject);    //Destruimos nuestro Item Interior
+        }                 
+    }                             
 }

@@ -39,8 +39,7 @@ public class Proyectil : MonoBehaviour
         {
             arrastrarBola();
         }
-    }
-    
+    }      
     private void arrastrarBola()
     {
         if (press)
@@ -55,8 +54,7 @@ public class Proyectil : MonoBehaviour
                 rb2d.position = slingRb.position + direction * disMax;
             }
 
-        }
-          
+        }            
     }
     //proyectil en disparador  objeto en catapulta
     

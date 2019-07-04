@@ -5,9 +5,7 @@ using UnityEngine;
 //**** Aplicamos a nuestras burbujas **********
 
 public class Burbujas : MonoBehaviour
-{
-    //private Rigidbody2D rb2d;
-   // private BoxCollider2D bc2d;
+{     
     private CircleCollider2D cc2d;
     private CircleCollider2D cc2dItem;
     private Rigidbody2D rb2dItem;
@@ -15,13 +13,16 @@ public class Burbujas : MonoBehaviour
    // private Transform transItem;     
     [Range(1, 5)]
     public int resistencia;
-       
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Start()
     {
         cc2d = GetComponent<CircleCollider2D>();
         rb2dItem = ItemInterior.GetComponent<Rigidbody2D>();
         cc2dItem = ItemInterior.GetComponent<CircleCollider2D>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {          
         resistencia = resistencia - 1;
        // Debug.Log(resistencia); 
         if (resistencia <= 0)
@@ -30,10 +31,7 @@ public class Burbujas : MonoBehaviour
            // rb2dItem.bodyType = RigidbodyType2D.Dynamic;    //caen objetos
             cc2dItem.isTrigger = true;
             //transItem.position = new Vector3(0, 0, 0);              
-            rb2dItem.drag = 1;
-            
+            rb2dItem.drag = 1;            
         }
-    }
-        
-
+    }          
 }

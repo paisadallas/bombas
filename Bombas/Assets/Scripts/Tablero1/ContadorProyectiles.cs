@@ -9,20 +9,15 @@ public class ContadorProyectiles : MonoBehaviour
     public Text contador;
     [Range(0,10)]
     public int disponibles;
-    private int bolas;
-    // Start is called before the first frame update
+    private int bolas;    
     void Start()
-    {
-
-        contador.text = ""+ disponibles; 
-
+    {    
+        contador.text = ""+ disponibles;  
     }
 
     private void Update()
-    {
-        
-        contador.text = "" + MisDisparos();
-
+    {          
+        contador.text = "" + MisDisparos();  
     }
 
     private int MisDisparos()

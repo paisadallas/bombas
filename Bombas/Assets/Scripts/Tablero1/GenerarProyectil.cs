@@ -8,10 +8,10 @@ public class GenerarProyectil : MonoBehaviour
 {
     [Range(1, 10)]
     public int disparos;     
-    public Proyectil posX;
     public TableroUno checar;
     public GameObject disparador;
     private Transform coordenadasX;
+    public UnableDisparador panelWinner;
     
     private void Start()
     {
@@ -20,14 +20,14 @@ public class GenerarProyectil : MonoBehaviour
     void OnTriggerEnter2D(Collider2D otro)
     {
         //Generamos Nuevo proyectil
-        if (otro.gameObject.tag == "Proyectiles" && (disparos-1) > NoProyectiles.disparos)
+        if (otro.gameObject.tag == "Proyectiles" && (disparos-1) > NoProyectiles.disparos && panelWinner.estado==false)
         {               
-            Instantiate(gameObject, new Vector3(disparador.transform.position.x+0.35f, -7, 0), Quaternion.identity);  //0.35 Delay posicion            
+           Instantiate(gameObject, new Vector3(disparador.transform.position.x+0.35f, -7, 0), Quaternion.identity);  //0.35 Delay posicion            
         }
         // Destruimos los disparos
         if (otro.gameObject.tag == "suelo")
         {
-            NoProyectiles proyectiles = new NoProyectiles(); //Creamos nuevo proyectil
+            NoProyectiles proyectiles = new NoProyectiles(); //Creamos contador de proyectil
             // Debug.Log("Destruido");
             DisparosDispoblibles(disparos);
             Destroy(gameObject);

@@ -22,8 +22,7 @@ public class ContadorPuntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        Conteo(marcador);
-        Debug.Log(Marcador.miMarcador);
+        Conteo(marcador);          
     }
 
     private void Conteo(float marcador)

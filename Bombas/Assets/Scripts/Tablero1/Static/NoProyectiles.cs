@@ -10,6 +10,7 @@ public class NoProyectiles
     public NoProyectiles()
     {
         disparos++;
-    }
-   
+    }      
 }
+
+   

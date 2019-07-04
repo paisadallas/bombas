@@ -10,6 +10,8 @@ public class Obstaculo : MonoBehaviour
     private PolygonCollider2D pc2d;
     [Range(1, 5)]
     public int resistencia;
+    [Range(0, 10)]
+    public int NoPuntos;
 
     private void Start()
     {
@@ -17,17 +19,26 @@ public class Obstaculo : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
-       // bc2d = GetComponent<BoxCollider2D>();
+    {          
         rb2d = GetComponent<Rigidbody2D>();
         resistencia = resistencia - 1;
         // Debug.Log(resistencia); 
         if (resistencia <= 0)
         {
+            SumarPuntos();
             // bc2d.enabled = false;
             pc2d.isTrigger = true;
             rb2d.bodyType = RigidbodyType2D.Dynamic;
             
+        }
+    }
+
+    void SumarPuntos()
+    {
+        for (int i = 0; i < NoPuntos; i++)
+        {
+            // Marcador miMarcador = new Marcador(); 
+            Marcador miMarcador = gameObject.AddComponent<Marcador>();  //Forma correcta de hacerlo
         }
     }
 }

@@ -9,6 +9,11 @@ public class TableroUno : MonoBehaviour
 {
     [Range(0,10)]
     public int TotalBurbujas;
+    public GameObject winnerCanvas;
+    private void Update()
+    {
+        winnerLevel(TotalBurbujas);
+    } 
     public void perder(int disparos)
     {
          if(disparos<= 0)
@@ -19,7 +24,6 @@ public class TableroUno : MonoBehaviour
             Puntos.logros = 0;            //Reinicio Puntos
         }
     }  
-
     private void OnGUI()
     {
         if (GUI.Button(new Rect(10, 10, 50, 30), "Reset"))
@@ -29,18 +33,17 @@ public class TableroUno : MonoBehaviour
             Puntos.logros = 0;              //Reinicio Puntos
         }       
             
-    }
-
+    }   
     public void winnerLevel(int logros)
     {
          if(Puntos.logros== TotalBurbujas)
         {
 
             Debug.Log("Haz Ganado!!");
+            winnerCanvas.SetActive(true);
         }
 
-    }
-
+    }    
     public void PerderNivel()
     {
         Debug.Log("Haz perdido Nivel");
