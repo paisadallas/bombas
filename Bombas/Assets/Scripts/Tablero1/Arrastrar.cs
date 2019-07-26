@@ -14,8 +14,8 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     private float rangoX=3.0f;
     private float rangoY;
        
-    [Range(0, 10)]
-    public float delay;
+    
+    private float delay;
     
     void Start()
     {
@@ -45,8 +45,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
         transDisparador.position = new Vector2(posicion-delay, -7.0f);   //rango Y = -7.0
         disparador.SetActive(true);
         Destroy(gameObject);
-        miContador.resetContador();
-     
+        miContador.resetContador();     
                                                                           
     }
 

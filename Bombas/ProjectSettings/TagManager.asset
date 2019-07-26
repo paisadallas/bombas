@@ -8,6 +8,9 @@ TagManager:
   - suelo
   - Proyectiles
   - Logro
+  - star
+  - Obstaculo
+  - Video
   layers:
   - Default
   - TransparentFX

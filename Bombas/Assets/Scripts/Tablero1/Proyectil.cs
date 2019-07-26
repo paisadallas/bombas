@@ -5,7 +5,7 @@ using UnityEngine;
 // Se aplica a nuestro proyectil (al igual que GenerarProyectil.cs)
 public class Proyectil : MonoBehaviour
 {
-   
+    
     private Rigidbody2D rb2d;
     private Rigidbody2D slingRb;
     private SpringJoint2D sj2d;
@@ -13,7 +13,9 @@ public class Proyectil : MonoBehaviour
     private float relaseDealy;
     private float disMax = 2f;      
     private Transform coordenadaPiedra;      
-    public bool cargado; 
+    public bool cargado;
+
+    private LineRenderer lr;
     private void Start()
     {
         sj2d.enabled = true;
@@ -22,7 +24,9 @@ public class Proyectil : MonoBehaviour
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
-        //press = true;
+
+        lr = GetComponent<LineRenderer>();
+        
     }
 
     private void Awake()
@@ -31,7 +35,7 @@ public class Proyectil : MonoBehaviour
         sj2d = GetComponent<SpringJoint2D>();
         slingRb = sj2d.connectedBody;
         relaseDealy = 1 / (sj2d.frequency * 4);   // separar objeto en un tiempo x 
-      
+             
     }
     void Update()
     {
@@ -44,6 +48,7 @@ public class Proyectil : MonoBehaviour
     {
         if (press)
         {
+          //  LineaRenderPosition();
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float distance = Vector2.Distance(mousePosition, slingRb.position);
             rb2d.position = mousePosition;
@@ -55,6 +60,14 @@ public class Proyectil : MonoBehaviour
             }
 
         }            
+    }
+
+    private void LineaRenderPosition()
+    {
+        Vector3[] positions = new Vector3[2];
+        positions[0] = rb2d.position;
+        positions[1] = slingRb.position;
+        lr.SetPositions(positions);
     }
     //proyectil en disparador  objeto en catapulta
     

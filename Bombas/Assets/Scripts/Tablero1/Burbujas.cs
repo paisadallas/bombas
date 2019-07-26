@@ -28,6 +28,7 @@ public class Burbujas : MonoBehaviour
         if (resistencia <= 0)
         {
             cc2d.enabled = false;
+            cc2d.isTrigger = true;
            // rb2dItem.bodyType = RigidbodyType2D.Dynamic;    //caen objetos
             cc2dItem.isTrigger = true;
             //transItem.position = new Vector3(0, 0, 0);              

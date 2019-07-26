@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 839dbb7fec7fce04d8df58a5fa78a83e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4764421010956287365
+    second: parpadeo_0
+  - first:
+      213: 2986137407068942611
+    second: parpadeo_1
+  - first:
+      213: 8987358056202211020
+    second: parpadeo_2
+  - first:
+      213: 4225272125785231070
+    second: parpadeo_3
+  - first:
+      213: -2214788236723977036
+    second: parpadeo_4
+  - first:
+      213: -6497297139919667080
+    second: parpadeo_5
+  - first:
+      213: 5481751592760216498
+    second: parpadeo_6
+  - first:
+      213: 247109215067005915
+    second: parpadeo_7
+  - first:
+      213: -204524456755745690
+    second: parpadeo_8
+  - first:
+      213: -7830661660312171251
+    second: parpadeo_9
+  - first:
+      213: -5496539145166204159
+    second: parpadeo_10
+  - first:
+      213: 7569159872290771363
+    second: parpadeo_11
+  - first:
+      213: -5711168072677673579
+    second: parpadeo_12
+  - first:
+      213: -7736758138081527919
+    second: parpadeo_13
+  - first:
+      213: -7791218423307649337
+    second: parpadeo_14
+  - first:
+      213: -5062877466957840703
+    second: parpadeo_15
+  - first:
+      213: -6169066499677921281
+    second: parpadeo_16
+  - first:
+      213: -9006906717499389376
+    second: parpadeo_17
+  - first:
+      213: 8827681941164405468
+    second: parpadeo_18
+  - first:
+      213: 7237069532451624245
+    second: parpadeo_19
+  - first:
+      213: -1004227955916999725
+    second: parpadeo_20
+  - first:
+      213: 6732684776582622726
+    second: parpadeo_21
+  - first:
+      213: -3877160344159098375
+    second: parpadeo_22
+  - first:
+      213: -1596125978589221187
+    second: parpadeo_23
+  - first:
+      213: -9070470408460290693
+    second: parpadeo_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: parpadeo_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1675
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f0b9061e40c1f4ba1025f186d456ff
+      internalID: 4764421010956287365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1675
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadca956cc3a3ad45b7a5134eee5501b
+      internalID: 2986137407068942611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_2
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1675
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8290f9f457fdbd04a97e906855ac6fdb
+      internalID: 8987358056202211020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1505
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c20f7fc28f2d543bde7a823b31eb3b
+      internalID: 4225272125785231070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1505
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b673c63a74d998d47855372c7be76547
+      internalID: -2214788236723977036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_5
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1505
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e12f0d4f333c854a89ee88a1d4a4420
+      internalID: -6497297139919667080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1326
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f378f4a8906bd2245aee26b3abd32153
+      internalID: 5481751592760216498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1326
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a23bc1454e915e4e8980ae9008f503a
+      internalID: 247109215067005915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_8
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1326
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a664c64fd3de61343b6b6afbfb4a507e
+      internalID: -204524456755745690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1145
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef40d65390a5194d95652ab3e73c28e
+      internalID: -7830661660312171251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1145
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9c9d1ffd8666a4bb5d4b0a92cbf98a
+      internalID: -5496539145166204159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_11
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1145
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69135c508436d143a6702b4307cc342
+      internalID: 7569159872290771363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 927
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bbaa8dbffbb2949befc951bbf1955f
+      internalID: -5711168072677673579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_13
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 927
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c50e2bba16a8245bbee8c14e2fc067
+      internalID: -7736758138081527919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_14
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 927
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd2c5e2a31ee444a92d782aff529e62
+      internalID: -7791218423307649337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 733
+        width: 232
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720136c9f6b71eb419094992ff6ebdba
+      internalID: -5062877466957840703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 743
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabf154101f0b3a499961700810f4bb2
+      internalID: -6169066499677921281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_17
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 733
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42334a45789b1d4bb68292999102717
+      internalID: -9006906717499389376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 527
+        width: 232
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fee01ffc041c2745a5df0ec5ae1a966
+      internalID: 8827681941164405468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 541
+        width: 232
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff1a408618e9704fa7bb0d7b20efd64
+      internalID: 7237069532451624245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_20
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 527
+        width: 231
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fac1169fdba2945a3cc3d8a8bdb513
+      internalID: -1004227955916999725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_21
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 308
+        width: 232
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d4e62bc0c25f142b13c6a834a1f214
+      internalID: 6732684776582622726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_22
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 316
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3614000162387c41a82492f4b0048d2
+      internalID: -3877160344159098375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_23
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 304
+        width: 233
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950df1981a943ce49812f2c2d03f47c5
+      internalID: -1596125978589221187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parpadeo_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 72
+        width: 232
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32335ed723090534187af27a4662bf10
+      internalID: -9070470408460290693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1e9ee19c1c77947489e755d1a88f1183
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

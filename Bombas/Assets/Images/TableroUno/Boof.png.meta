@@ -1,0 +1,1203 @@
+fileFormatVersion: 2
+guid: 91def0554b4b6a5419b1bedc6aca5cb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5370785286017292348
+    second: Boof_0
+  - first:
+      213: 3372069535534434411
+    second: Boof_1
+  - first:
+      213: 7663233760340568867
+    second: Boof_2
+  - first:
+      213: 2113774130289083681
+    second: Boof_3
+  - first:
+      213: -2120570073307407504
+    second: Boof_4
+  - first:
+      213: 6207921377493197187
+    second: Boof_5
+  - first:
+      213: -2973378122773739989
+    second: Boof_6
+  - first:
+      213: 7636718224470841155
+    second: Boof_7
+  - first:
+      213: -8144953100305775828
+    second: Boof_8
+  - first:
+      213: -2692765978745626500
+    second: Boof_9
+  - first:
+      213: -2239870657841852852
+    second: Boof_10
+  - first:
+      213: -4717121238916916644
+    second: Boof_11
+  - first:
+      213: -2044664537547602180
+    second: Boof_12
+  - first:
+      213: -442996785339079622
+    second: Boof_13
+  - first:
+      213: 8173100249076853561
+    second: Boof_14
+  - first:
+      213: -9121915977571215644
+    second: Boof_15
+  - first:
+      213: 6341758621079853282
+    second: Boof_16
+  - first:
+      213: 2765690962315895978
+    second: Boof_17
+  - first:
+      213: -3253832689111736129
+    second: Boof_18
+  - first:
+      213: 3918108350489434099
+    second: Boof_19
+  - first:
+      213: -1129779576218603659
+    second: Boof_20
+  - first:
+      213: 7392172614160323159
+    second: Boof_21
+  - first:
+      213: 3884595602688473049
+    second: Boof_22
+  - first:
+      213: -8719271238330770757
+    second: Boof_23
+  - first:
+      213: 7057124366109206316
+    second: Boof_24
+  - first:
+      213: 7994681690140430408
+    second: Boof_25
+  - first:
+      213: -6701582698884592309
+    second: Boof_26
+  - first:
+      213: 2371233792623418966
+    second: Boof_27
+  - first:
+      213: -6503287504108957723
+    second: Boof_28
+  - first:
+      213: -8597204391673237662
+    second: Boof_29
+  - first:
+      213: 4756592248024214225
+    second: Boof_30
+  - first:
+      213: 5132118141491845891
+    second: Boof_31
+  - first:
+      213: -5731247384190421216
+    second: Boof_32
+  - first:
+      213: -2017269195278293947
+    second: Boof_33
+  - first:
+      213: -8748637393368063332
+    second: Boof_34
+  - first:
+      213: 1371793683349992040
+    second: Boof_35
+  - first:
+      213: -1406202192397222373
+    second: Boof_36
+  - first:
+      213: 1413400235196701162
+    second: Boof_37
+  - first:
+      213: 3047366741510334126
+    second: Boof_38
+  - first:
+      213: -3618018680070972413
+    second: Boof_39
+  - first:
+      213: 1883071686373611290
+    second: Boof_40
+  - first:
+      213: 7824323177335634848
+    second: Boof_41
+  - first:
+      213: -5538094225684482826
+    second: Boof_42
+  - first:
+      213: 5226368661627341475
+    second: Boof_43
+  - first:
+      213: 5544371013908452220
+    second: Boof_44
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boof_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2541
+        width: 156
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20851cb4446fd441b11b40e526bd017
+      internalID: 5370785286017292348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2593
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cbe46854f087243a29037d2c7596b5
+      internalID: 3372069535534434411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_2
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 2535
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4826e00812b736e4abb95cdb37d5c784
+      internalID: 7663233760340568867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2416
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d915799304aa1d4b865ca6b19763d88
+      internalID: 2113774130289083681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2405
+        width: 110
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6a8a78eafa4b14a810e09da6c9c7fd
+      internalID: -2120570073307407504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_5
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2386
+        width: 146
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6041d896febb408408dcbc0204368346
+      internalID: 6207921377493197187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2240
+        width: 147
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0326ebaed0926c946b359198b84f6dca
+      internalID: -2973378122773739989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2236
+        width: 151
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7c46a0afee88e4ba8421f348b8d1dd
+      internalID: 7636718224470841155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2216
+        width: 156
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46c0246d3b9a5745a5986bf27a2c6a3
+      internalID: -8144953100305775828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2032
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b46ecc6bcc98e341966d6be5f4d870a
+      internalID: -2692765978745626500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_10
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2039
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92f89b3c60b66e4f9374143df19047d
+      internalID: -2239870657841852852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_11
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2035
+        width: 147
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3ddb01ad547bd46970d45a6b02e850
+      internalID: -4717121238916916644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_12
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1843
+        width: 156
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7b9fdfc36c23e40bfc6b330fbc6b13
+      internalID: -2044664537547602180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_13
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1853
+        width: 171
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2d9f08f373a594087d6648c037f375
+      internalID: -442996785339079622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1818
+        width: 219
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5aee4056ce54648b279021fc116553
+      internalID: 8173100249076853561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1626
+        width: 222
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a991a8277df7a94da616f25ed2dc2a0
+      internalID: -9121915977571215644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_16
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1624
+        width: 227
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca353c95fd0d784faddbbabafdf741a
+      internalID: 6341758621079853282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_17
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1629
+        width: 228
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cb894a65913474c865a24d6fb2573c
+      internalID: 2765690962315895978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1449
+        width: 135
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ff99410b24c774c9b72a7ebcedd705
+      internalID: -3253832689111736129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_19
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1454
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbb20fadd1291b4ba34b6c85e2aeec8
+      internalID: 3918108350489434099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_20
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1470
+        width: 131
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df7cfad700c2374c9dacc30f3ed1dac
+      internalID: -1129779576218603659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1276
+        width: 131
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382f73cd59f6e3f47be5d78043009eaa
+      internalID: 7392172614160323159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_22
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1281
+        width: 130
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dad9a57cbf2284b8e27e283ae7f053
+      internalID: 3884595602688473049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_23
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1296
+        width: 131
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d0e875e8a8889408e0085bd8a524a1
+      internalID: -8719271238330770757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1110
+        width: 132
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab5c8f471caa2242878dea13cbbb651
+      internalID: 7057124366109206316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_25
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1113
+        width: 130
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6be0e10559982b44826567dfb3f091b
+      internalID: 7994681690140430408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1113
+        width: 132
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86ba18d27f60b1498177b9106aac920
+      internalID: -6701582698884592309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 937
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecf2d0d3a370fe40a5cc5234dc8b2bb
+      internalID: 2371233792623418966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_28
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 922
+        width: 132
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d39b5416fff774ca547d67a4eb3192
+      internalID: -6503287504108957723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 921
+        width: 129
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc0a51b1e2c04e4aa31b7386b3101a1
+      internalID: -8597204391673237662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 784
+        width: 131
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e5ad5c786f1ee4b8974dc7b7304238
+      internalID: 4756592248024214225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_31
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 777
+        width: 132
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ab601b3123e72468482b3700f32e66
+      internalID: 5132118141491845891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 767
+        width: 132
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277fda6b433d2d44f9e056e2550adf37
+      internalID: -5731247384190421216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 619
+        width: 124
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049590f5b1224b7419ffe6a0f4aa7280
+      internalID: -2017269195278293947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_34
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 614
+        width: 130
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a581d11dc8ebb745b1b4e8841fc0a53
+      internalID: -8748637393368063332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_35
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 597
+        width: 130
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bd142ddf3a2ff468afb183585ff43e
+      internalID: 1371793683349992040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_36
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 466
+        width: 130
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1688e1d4b4233ba499880834c6fae347
+      internalID: -1406202192397222373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_37
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 458
+        width: 135
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6bfb9ea7a4480439536fb99b44d20d
+      internalID: 1413400235196701162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_38
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 436
+        width: 131
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ddd4692768a2a4e81f2e5e48c9ed89
+      internalID: 3047366741510334126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_39
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 263
+        width: 135
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e14bdb1ae27fb438464177530bf942
+      internalID: -3618018680070972413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_40
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 263
+        width: 137
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca6bb51d79fc8644897e0f1698424c6
+      internalID: 1883071686373611290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_41
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 262
+        width: 140
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fad5c304e9aca488c361129885eb92
+      internalID: 7824323177335634848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 58
+        width: 143
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fef9fc1268871a4697dcf88a7924944
+      internalID: -5538094225684482826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_43
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 58
+        width: 142
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e761d076761c71438ee700aee85e221
+      internalID: 5226368661627341475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boof_44
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 58
+        width: 147
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a595c01a818a34da1320821ca8d88e
+      internalID: 5544371013908452220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: de86dc94fc1ebc149808a84b51c5c8f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

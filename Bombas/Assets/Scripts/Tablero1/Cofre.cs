@@ -25,5 +25,7 @@ public class Cofre : MonoBehaviour
             Puntos winnerPuntos = new Puntos();    //Puntos para ganar Level
             Destroy(gameObject);    //Destruimos nuestro Item Interior
         }                 
-    }                             
+    }
 }
+         
+   

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //****** Aplicamos a nuetra Camara**************
 
@@ -10,43 +11,45 @@ public class TableroUno : MonoBehaviour
     [Range(0,10)]
     public int TotalBurbujas;
     public GameObject winnerCanvas;
+    public GameObject lostCanvas;
+    private AudioSource audioTablero;  
+
+    private void Start()
+    {
+        audioTablero = GetComponent<AudioSource>();
+       
+    }
     private void Update()
     {
         winnerLevel(TotalBurbujas);
+          
     } 
+           
     public void perder(int disparos)
     {
-         if(disparos<= 0)
-        {
-            Debug.Log("eh perdido");            
-            SceneManager.LoadScene("TableroUno");
-            NoProyectiles.disparos = 0;   // Reinicio mis diparos
-            Puntos.logros = 0;            //Reinicio Puntos
+         if(disparos<= 0 && !winnerCanvas.activeSelf)    //evitamos ganar y perder a la vez
+        {                  
+                lostCanvas.SetActive(true);
+                audioTablero.Stop();            
         }
-    }  
-    private void OnGUI()
-    {
-        if (GUI.Button(new Rect(10, 10, 50, 30), "Reset"))
-        {              
-            SceneManager.LoadScene("TableroUno");    //Cargo mi escena de nuevo
-            NoProyectiles.disparos = 0;   // Reinicio mis diparos
-            Puntos.logros = 0;              //Reinicio Puntos
-        }       
-            
-    }   
+    } 
+          
+     
     public void winnerLevel(int logros)
     {
-         if(Puntos.logros== TotalBurbujas)
+         if(Puntos.logros== TotalBurbujas && !lostCanvas.activeSelf)
         {
 
-            Debug.Log("Haz Ganado!!");
+           // Debug.Log("Haz Ganado!!");
             winnerCanvas.SetActive(true);
+            audioTablero.Stop();
         }
 
     }    
     public void PerderNivel()
     {
         Debug.Log("Haz perdido Nivel");
+        
 
     }
 }

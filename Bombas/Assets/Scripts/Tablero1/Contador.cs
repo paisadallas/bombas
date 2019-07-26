@@ -7,11 +7,13 @@ using UnityEngine.UI;
 // Se aplica a un GameObjet Contador el cual contiene un contador con un Text(Script)
 public class Contador : MonoBehaviour
 {
-    public Text contador;
-    public TableroUno tablero; 
+    public Text contador;    
     private float tiempo = 10f;
     private bool estado;
     public Proyectil miProyectil;
+    public GameObject panelLost;
+   // public GameObject panelPause;
+    
     void Start()
     {
         contador.text = "" + tiempo;
@@ -49,10 +51,9 @@ public class Contador : MonoBehaviour
 
             if (tiempo <= 0)
             {           
-            //Perdemos nivel si no ubicamos
-            tablero.PerderNivel();
+            //Perdemos nivel si no ubicamos             
             finContador(false);
-
+            panelLost.SetActive(true);
             }     
    
     }
