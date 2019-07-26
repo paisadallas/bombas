@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class AdsRecompenzado : MonoBehaviour
 {
+
+    
+
     string placementID = "rewardedVideo"; //ID del anuncio
     void Start()
     {
@@ -62,8 +65,7 @@ public class AdsRecompenzado : MonoBehaviour
         SceneManager.LoadScene("TableroUno");    //Cargo mi escena de nuevo
         NoProyectiles.disparos = 0;   // Reinicio mis diparos
         Puntos.logros = 0;              //Reinicio Puntos
-        Marcador.miMarcador = 0;
-
+        Marcador.miMarcador = 0;       
         DisparosExtras miMarcador = new DisparosExtras(); // Agg Disparo
     }
 }
