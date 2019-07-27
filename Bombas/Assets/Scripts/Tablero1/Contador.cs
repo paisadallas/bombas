@@ -11,7 +11,7 @@ public class Contador : MonoBehaviour
     private float tiempo = 10f;
     private bool estado;
     public Proyectil miProyectil;
-    public GameObject panelLost;
+    public GameObject panelTimeEnd;
    // public GameObject panelPause;
     
     void Start()
@@ -53,7 +53,7 @@ public class Contador : MonoBehaviour
             {           
             //Perdemos nivel si no ubicamos             
             finContador(false);
-            panelLost.SetActive(true);
+            panelTimeEnd.SetActive(true);
             }     
    
     }

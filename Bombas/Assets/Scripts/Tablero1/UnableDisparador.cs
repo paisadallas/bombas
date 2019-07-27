@@ -9,8 +9,7 @@ public class UnableDisparador : MonoBehaviour
     public bool estado;
     
     void Start()
-    {
-
+    {    
         //  disparador.SetActive(false);
         estado = true;  
     }

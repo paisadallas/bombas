@@ -12,6 +12,7 @@ public class TableroUno : MonoBehaviour
     public int TotalBurbujas;
     public GameObject winnerCanvas;
     public GameObject lostCanvas;
+    public GameObject panelTimeEnd;
     private AudioSource audioTablero;  
 
     private void Start()
@@ -22,6 +23,10 @@ public class TableroUno : MonoBehaviour
     private void Update()
     {
         winnerLevel(TotalBurbujas);
+        if (panelTimeEnd.activeSelf)
+        {
+            audioTablero.Stop();
+        }
           
     } 
            
@@ -48,8 +53,7 @@ public class TableroUno : MonoBehaviour
     }    
     public void PerderNivel()
     {
-        Debug.Log("Haz perdido Nivel");
-        
+        Debug.Log("Haz perdido Nivel");       
 
     }
 }

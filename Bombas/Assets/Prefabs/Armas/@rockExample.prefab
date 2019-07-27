@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2845742215155673593}
   - component: {fileID: 7186557396516745069}
   - component: {fileID: 6057650984500437216}
+  - component: {fileID: 8707653396732381154}
   m_Layer: 8
   m_Name: '@rockExample'
   m_TagString: Untagged
@@ -172,6 +173,8 @@ MonoBehaviour:
   disparos: 10
   checar: {fileID: 0}
   disparador: {fileID: 0}
+  noProyectiles: {fileID: 0}
+  extras: 0
 --- !u!120 &2845742215155673593
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -378,3 +381,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8707653396732381154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334912943978539733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67b3e71f285be498190bc5acdc0743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelCofre: {fileID: 0}

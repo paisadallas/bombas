@@ -13,8 +13,7 @@ public class Proyectil : MonoBehaviour
     private float relaseDealy;
     private float disMax = 2f;      
     private Transform coordenadaPiedra;      
-    public bool cargado;
-
+    public bool cargado; 
     private LineRenderer lr;
     private void Start()
     {
@@ -25,8 +24,7 @@ public class Proyectil : MonoBehaviour
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
 
-        lr = GetComponent<LineRenderer>();
-        
+        lr = GetComponent<LineRenderer>();          
     }
 
     private void Awake()
@@ -73,9 +71,8 @@ public class Proyectil : MonoBehaviour
     
     private void OnMouseDown()
     {
-             rb2d.isKinematic = true;
-        //cargado = false;
-        press = true; 
+        rb2d.isKinematic = true;
+        press = true;
     }
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()

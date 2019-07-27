@@ -7,8 +7,15 @@ using UnityEngine.EventSystems;
 
 public class TouchCofre : MonoBehaviour
 {
+
+    public GameObject panelCofre;   
+
   public void cofre()
-    {
-        Debug.Log("tocadoCOfre");
+    {           
+        if (!panelCofre.activeSelf)
+        {              
+            panelCofre.SetActive(true);   //siempre  y cuando no exista
+         
+        }
     }
 }
