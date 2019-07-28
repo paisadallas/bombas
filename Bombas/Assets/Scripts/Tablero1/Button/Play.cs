@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// boton usada por el boton Pause del juego ***///
 public class Play : MonoBehaviour
 {
     public GameObject panelPause;

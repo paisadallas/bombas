@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// se aplica a nuestro boton configuracion ///
 public class Configuration : MonoBehaviour
 {
     public GameObject pausePanel;

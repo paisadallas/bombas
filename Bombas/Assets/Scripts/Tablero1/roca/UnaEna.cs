@@ -30,7 +30,7 @@ public class UnaEna : MonoBehaviour
 
         if (panelCofre.activeSelf && VelX==0) // objeto esta quieto
         {
-            gameObject.layer = 10;
+            gameObject.layer = 10;    //Layer No renderizadoPor la camara
         }
 
         if (!panelCofre.activeSelf)
