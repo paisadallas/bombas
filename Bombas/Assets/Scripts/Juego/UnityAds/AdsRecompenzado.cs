@@ -65,7 +65,8 @@ public class AdsRecompenzado : MonoBehaviour
         SceneManager.LoadScene("TableroUno");    //Cargo mi escena de nuevo
         NoProyectiles.disparos = 0;   // Reinicio mis diparos
         Puntos.logros = 0;              //Reinicio Puntos
-        Marcador.miMarcador = 0;       
-        DisparosExtras miMarcador = new DisparosExtras(); // Agg Disparo
+        Marcador.miMarcador = 0;
+        //  DisparosExtras miMarcador = new DisparosExtras(); // Agg Disparo
+        Rock unaRoca = new Rock(1); // agregamos una roca
     }
 }

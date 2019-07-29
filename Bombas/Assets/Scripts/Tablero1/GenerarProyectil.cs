@@ -10,9 +10,8 @@ public class GenerarProyectil : MonoBehaviour
     public int disparos;     
     public TableroUno checar;
     public GameObject disparador;
-    private Transform coordenadasX;
-
-    public ContadorProyectiles noProyectiles;     
+    private Transform coordenadasX; 
+    public ContadorProyectiles noProyectiles;       
     public int extras;
     
     private void Start()
@@ -37,7 +36,7 @@ public class GenerarProyectil : MonoBehaviour
         if (otro.gameObject.tag == "suelo")   //Tocamos el Tag Suelo
         {
             NoProyectiles proyectiles = new NoProyectiles(); //Creamos contador de proyectil            
-            DisparosDispoblibles(disparos+extras);
+            DisparosDispoblibles(disparos+extras);          
             Destroy(gameObject);
         }
     }

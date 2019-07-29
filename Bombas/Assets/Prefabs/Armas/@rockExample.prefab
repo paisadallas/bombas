@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 7186557396516745069}
   - component: {fileID: 6057650984500437216}
   - component: {fileID: 8707653396732381154}
+  - component: {fileID: 7416808645847670465}
   m_Layer: 8
   m_Name: '@rockExample'
   m_TagString: Untagged
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.86, y: 0.68}
+  m_Size: {x: 1.056, y: 1.038}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -393,4 +394,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a67b3e71f285be498190bc5acdc0743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTimeEnd: {fileID: 0}
   panelCofre: {fileID: 0}
+--- !u!114 &7416808645847670465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334912943978539733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eae5d772b412d6459518f1a1118d2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockXNormal: {fileID: 0}
+  rockXR1: {fileID: 21300000, guid: d788f69fa47ddb24abc6b7033766942e, type: 3}
+  rockXR2: {fileID: 0}

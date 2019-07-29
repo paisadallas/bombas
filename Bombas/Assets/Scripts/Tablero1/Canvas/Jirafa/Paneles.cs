@@ -7,12 +7,14 @@ using UnityEngine;
 public class Paneles : MonoBehaviour
 {
     public GameObject panelWinner;
+    public GameObject panelLost;
+    public GameObject panelTimeEnd;
 
-    
+
     // Update is called once per frame
     void Update()
     {
-        if (panelWinner.activeSelf)
+        if (panelWinner.activeSelf || panelLost.activeSelf||panelTimeEnd.activeSelf)
         {
             gameObject.SetActive(false);
         } 

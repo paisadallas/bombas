@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivadorPoder : MonoBehaviour
 {
-    public ClasePadre clasePadre;
+    public ClasePadre clasePadre;      
 
     [Range(0,10)]
    public int totalObstaculos;
@@ -14,12 +14,12 @@ public class ActivadorPoder : MonoBehaviour
         totalObstaculos = 1;
          
     }
-
+    
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (otro.gameObject.tag == "suelo")
         {
-            clasePadre.estado = false;
+            clasePadre.estado = false;       // destruyo el poder
         }
     }
 
@@ -29,10 +29,11 @@ public class ActivadorPoder : MonoBehaviour
         {               
             if (totalObstaculos <= 0)
             {
-                clasePadre.estado = false;
+                clasePadre.estado = false;          // total colisiones para desactiva poder
             }
             totalObstaculos = totalObstaculos-1;             
         }
     }
+        
 
 }

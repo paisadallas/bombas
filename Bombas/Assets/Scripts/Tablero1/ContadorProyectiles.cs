@@ -9,9 +9,8 @@ public class ContadorProyectiles : MonoBehaviour
     public Text contador;
     [Range(0,10)]
     public int disponibles; 
-    public int bolas;
-    [Range(0, 10)]
-    
+    public int bolas; 
+    [Range(0, 10)]     
     public int extras;
 
     void Start()
