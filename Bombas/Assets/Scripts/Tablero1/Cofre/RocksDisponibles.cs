@@ -10,10 +10,13 @@ public class RocksDisponibles : MonoBehaviour
 
     public Text rocasNormal;
     public Text rocasX1;
+    public Text rocasX3;
 
     void Start()
     {
         rocasNormal.text = "" + Rock.roca;
+        rocasX1.text = "" + RockX1.roca;
+        rocasX3.text = "" + RockX3.roca;
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class RocksDisponibles : MonoBehaviour
     {
         RockNormal();
         RockPoder1();
+        RockPoder2();
     }
      
     private void RockNormal()
@@ -46,4 +50,17 @@ public class RocksDisponibles : MonoBehaviour
             rocasX1.text = "+" + RockX1.roca;
         }
     }
+
+    private void RockPoder2()
+    {
+        if (RockX3.roca == 0)
+        {
+            rocasX3.text = "";
+        }
+        else
+        {
+            rocasX3.text = "+" + RockX3.roca;
+        }
+    }
+
 }

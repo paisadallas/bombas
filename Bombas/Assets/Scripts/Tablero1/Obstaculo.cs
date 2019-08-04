@@ -27,7 +27,7 @@ public class Obstaculo : MonoBehaviour
         destruir = clasePadre.estado;
         rb2d = GetComponent<Rigidbody2D>();
         resistencia = resistencia - 1;
-        // Debug.Log(resistencia); 
+       
         if (resistencia <= 0 || destruir)
         {          
             

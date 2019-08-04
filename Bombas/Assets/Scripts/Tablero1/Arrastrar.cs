@@ -20,8 +20,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     void Start()
     {
         disparador.SetActive(false);  // inicialmente Desactivado
-        canvas = GetComponent<Transform>();    //mi disparador
-        //  canvas.position = new Vector3(0, -7, 0);      //posicion inicial
+        canvas = GetComponent<Transform>();    //mi disparador          
         rangoY = canvas.position.y;
     }
 
@@ -36,6 +35,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
          
     }
   
+    //Suelto el objeto
     private void OnMouseUp()
     {
         delay = 0.38f;   // objeto ubicado con un delay (problema que surgio)

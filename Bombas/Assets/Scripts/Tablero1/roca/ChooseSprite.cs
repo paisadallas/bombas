@@ -6,7 +6,7 @@ public class ChooseSprite : MonoBehaviour
 {
     public Sprite rockXNormal;
     public Sprite rockXR1;
-    public Sprite rockXR2;     
+    public Sprite rockXR3;     
     private SpriteRenderer spr;     
     [Range(0,2)]
     public int idRock;
@@ -33,7 +33,7 @@ public class ChooseSprite : MonoBehaviour
                 break;
 
             case 2:
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = rockXR2;
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = rockXR3;
                 break;
         }
     }

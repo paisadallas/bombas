@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class ActivadorPoder : MonoBehaviour
 {
-    public ClasePadre clasePadre;      
+    public ClasePadre clasePadre;
+    public PoderActual poderActual; // objeto contenedorBotones
 
     [Range(0,10)]
    public int totalObstaculos;
     
-    private void Start()
+   
+    private void Update()
     {
-        totalObstaculos = 1;
-         
+        totalObstaculos = poderActual.explociones;
+        poderActual.explociones = 1;
     }
-    
+
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (otro.gameObject.tag == "suelo")

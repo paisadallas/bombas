@@ -12,6 +12,7 @@ public class ContadorProyectiles : MonoBehaviour
     public int bolas; 
     [Range(0, 10)]     
     public int extras;
+    
 
     void Start()
     {    

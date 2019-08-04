@@ -11,12 +11,11 @@ public class cauchera : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private SpringJoint2D sj2d;    
-    private LineRenderer lr;
+    private LineRenderer lr;    
     public GameObject punto1;
     public GameObject punto2;
     private Rigidbody2D rb2dP1;
-    private Rigidbody2D rb2dP2;
-
+    private Rigidbody2D rb2dP2; 
     private AudioSource apuntando;
     bool enableAudio;
 
@@ -27,19 +26,21 @@ public class cauchera : MonoBehaviour
     {
         cargado = true;
         press = true;
-        lr = GetComponent<LineRenderer>();
+        lr = GetComponent<LineRenderer>();        
         lr.enabled = true;
-        enableAudio = true;
+        enableAudio = true;       
         rb2dP1 = punto1.GetComponent<Rigidbody2D>();
         rb2dP2 = punto2.GetComponent<Rigidbody2D>();
         apuntando = GetComponent<AudioSource>();
 
+       
+        
     }
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        sj2d = GetComponent<SpringJoint2D>();        ;
+        sj2d = GetComponent<SpringJoint2D>();     
     }
 
     // Update is called once per frame
@@ -48,15 +49,15 @@ public class cauchera : MonoBehaviour
       //  LineaRenderPosition();
         if (press && cargado == true)
         {
-            arrastrarBola();
+            arrastrarBola();         
         }      
     }
 
     private void arrastrarBola()
     {
         if (press)
-        {                
-            LineaRenderPosition();             
+        {
+            LineaRenderPosition(); //Descomentarear 
         } 
     }
 
@@ -72,11 +73,13 @@ public class cauchera : MonoBehaviour
     private void LineaRenderPosition()
     {
         Vector3[] positions = new Vector3[3]; 
-        positions[2] = rb2dP2.position;
+        
         positions[0] = rb2dP1.position;
         positions[1] = rb2d.position;
+        positions[2] = rb2dP2.position;
         lr.SetPositions(positions);        
-    }
+    } 
+
 
     private void OnMouseDown()
     {
@@ -86,7 +89,7 @@ public class cauchera : MonoBehaviour
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()
     {     
-        lr.enabled = false;          
+        lr.enabled = false;       
         apuntando.Stop();  // sonido      
     }
 }

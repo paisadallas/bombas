@@ -10,9 +10,9 @@ public class ActivarRocks : MonoBehaviour
     public GameObject panelCofre;    
     public ContadorProyectiles contadorProyectiles;
     public ClasePadre activadorPoder;
-    public PoderActual spriteActual; //Clase padre de poderes
+    public PoderActual objetos; //Clase padre, Contenedor de mis botones de poderes
 
-    public int idRoca;
+    private int idRoca;
     
     public void RocaXNormal()       //roca Normal
     {           
@@ -20,9 +20,9 @@ public class ActivarRocks : MonoBehaviour
         {
             Debug.Log("AGG ROCK!");
             contadorProyectiles.extras++;      //agregamos una roca!! 
-            Rock rocaUsada = new Rock(-1); //quitamos Una Roca !!
+            Rock rocaUsada = new Rock(-1); //quitamos Una Roca !! 
             panelCofre.SetActive(false);
-            spriteActual.poderActual = 0;
+            objetos.poderActual = 0;
         }
         else
         {
@@ -31,21 +31,39 @@ public class ActivarRocks : MonoBehaviour
        
     }
 
+    //Explota solo un objetos
     public void RocaXPoder1()
     {
         if(RockX1.roca > 0)
         {
             contadorProyectiles.extras++;      //agregamos una roca a la partida
-            RockX1 rocaUsada = new RockX1(-1);  //quitamos Una Roca Poder
-            activadorPoder.estado = true;
+            RockX1 rocaUsada = new RockX1(-1);  //quitamos Una RocaX1 Poder
+            activadorPoder.estado = true;       //Destruimos a un toque!
             panelCofre.SetActive(false);
-            spriteActual.poderActual = 1;
+            objetos.poderActual = 1;
+            objetos.explociones = 1;           //Solo una explocion
         }       
          else{
             Debug.Log("Sin rocas");
         }
     }
-   
 
-    
+    //Explotamos tres objetos
+    public void RocaXPoder2()                  
+    {
+        if (RockX3.roca > 0)
+        {
+            contadorProyectiles.extras++;      //agregamos una roca a la partida
+            RockX3 rocaUsada2 = new RockX3(-1);  //quitamos Una RocaX1 Poder 
+            activadorPoder.estado = true;       //Destruimos a un toque!
+            panelCofre.SetActive(false);
+            objetos.poderActual = 2;
+            objetos.explociones = 3;   //Tres explociones 
+        }
+        else
+        {
+            Debug.Log("Sin rocas");
+        }
+    }
+
 }

@@ -9,9 +9,9 @@ public class Contador : MonoBehaviour
 {
     public Text contador;    
     private float tiempo = 10f;
-    private bool estado;
-    public Proyectil miProyectil;
+    private bool estado;     
     public GameObject panelTimeEnd;
+    public GameObject disparador;
    // public GameObject panelPause;
     
     void Start()
@@ -22,7 +22,7 @@ public class Contador : MonoBehaviour
 
     public void finContador(bool fin)
     {
-        if (!fin)
+        if (fin)
         {
             contador.enabled = false;
             estado = false;
@@ -36,8 +36,10 @@ public class Contador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        conteo(estado);
-        finContador(miProyectil.cargado);
+        conteo(estado);     
+        finContador(disparador.activeSelf);
+
+     
     }
 
    private void conteo(bool estado)

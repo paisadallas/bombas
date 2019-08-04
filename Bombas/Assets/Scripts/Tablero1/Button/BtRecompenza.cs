@@ -21,10 +21,7 @@ public class BtRecompenza : MonoBehaviour, IDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 miPosicion = Camera.main.ScreenToWorldPoint(eventData.position);
-        // coordenadasPosicion(miPosicion);
-        //Vector3 coordenas = new Vector3(miPosicion.x, canvas.position.y, 30);
-        //transform.position = coordenas;
+        Vector3 miPosicion = Camera.main.ScreenToWorldPoint(eventData.position);       
         coordenadasPosicion(miPosicion.x);
     }
 

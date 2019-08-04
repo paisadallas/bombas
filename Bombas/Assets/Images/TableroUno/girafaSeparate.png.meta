@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 5343074803791000186
     second: girafaSeparate_1
+  - first:
+      213: 8542918420802430589
+    second: girafaSeparate_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -120,20 +123,20 @@ TextureImporter:
         width: 384
         height: 289
       alignment: 9
-      pivot: {x: 0.77496624, y: 0.16311842}
+      pivot: {x: 0.6704648, y: 0.23709814}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906aef6fd36596040a3000eb30eda76e
+      spriteID: aa867a671f7a8d3478e52de76192dc3b
       internalID: -7854089653999064388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: girafaSeparate_1
+      name: girafaSeparate_2
       rect:
         serializedVersion: 2
         x: 126
@@ -141,14 +144,14 @@ TextureImporter:
         width: 331
         height: 539
       alignment: 9
-      pivot: {x: 0.4207524, y: 0.26243544}
+      pivot: {x: 0.33402306, y: 0.28964096}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c8c304c9f6a2724aace70e317e38fd6
-      internalID: 5343074803791000186
+      spriteID: 76b5e0424c5ba09469428d718962712b
+      internalID: 8542918420802430589
       vertices: []
       indices: 
       edges: []

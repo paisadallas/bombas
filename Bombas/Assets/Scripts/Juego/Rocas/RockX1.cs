@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RockX1 
 {
-    public static int roca = 2;
+    public static int roca = 0;
 
     public RockX1(int cantidad)
     {
