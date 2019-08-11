@@ -40,9 +40,7 @@ public class GamaColores : MonoBehaviour
         if (rTotal == 1)
         {
             sr.color = new Color32(253, 0, 11,255);     //FD000B 4to
-        }
-
-        Debug.Log(rTotal);
+        }           
         
     }
 }

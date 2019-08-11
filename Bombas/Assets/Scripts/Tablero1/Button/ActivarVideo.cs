@@ -23,15 +23,17 @@ public class ActivarVideo : MonoBehaviour
 
     private void ChecarPosicion()
     {
-       
-        if (posX >= 1.5f  && verVideo== true)
+
+        if (posX >= 1.5f && verVideo == true)
         {
             verVideo = false;
             DisparosExtras.extras = 0; //Reiniciamos los disparos Extras
-            playVideo.ShowRewardedVideo();  
+            playVideo.ShowRewardedVideo();    //ATIVADOR ADS!!!!
         }
-        
+
     }
 
-    
+
 }
+    
+

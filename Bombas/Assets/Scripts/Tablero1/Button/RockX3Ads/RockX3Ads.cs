@@ -29,9 +29,9 @@ public class RockX3Ads : MonoBehaviour
         if (posX >= 1.5f && verVideo == true)        //evitamos que se reproduzca indefinidamente
         {
             verVideo = false;
-            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras
-                                       // playVideo.ShowRewardedVideo();  // play videoRecompensado
-            publicidad.ShowRewardedVideo();
+            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras           
+            //publicidad.ShowRewardedVideo();  //ACTIVIADOR ADS!!         Descomentarear para Ads
+            ReplayLevel();                   // NO ADS !!               Comentarear para Ads
         }
 
     }
@@ -56,7 +56,9 @@ public class RockX3Ads : MonoBehaviour
         if (LostLevel.no >= 7)
         {
             cantidad = 2;
+            LostLevel.no = 0;
         }
+        
 
     }
 }

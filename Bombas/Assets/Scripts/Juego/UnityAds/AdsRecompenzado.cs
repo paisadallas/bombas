@@ -44,8 +44,7 @@ public class AdsRecompenzado : MonoBehaviour
         {
             print("REWARDED - Recompensado.");
             //txtMessage.text = "REWARDED - Recompensado.";
-            //gemns += rewardGemns;
-            //txtGemns.text = gemns.ToString();
+           
             //aqui agrego la recompensa 
 
             seleccionPublicidad();

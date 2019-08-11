@@ -55,7 +55,9 @@ public class Contador : MonoBehaviour
             {           
             //Perdemos nivel si no ubicamos             
             finContador(false);
+           // conteo(false);
             panelTimeEnd.SetActive(true);
+            Destroy(this);     //ALERTA POSIBLE PROBLEMAS!!!
             }     
    
     }

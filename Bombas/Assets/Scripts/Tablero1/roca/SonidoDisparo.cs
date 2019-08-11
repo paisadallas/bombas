@@ -16,7 +16,7 @@ public class SonidoDisparo : MonoBehaviour
     // proyectil lanzado objeto lanzado
     private void OnMouseUp()
     {
-        Debug.Log("Solatado");
+      //  Debug.Log("Solatado");
         sonido.PlayOneShot(disparo, 1.0F);
     }
 }

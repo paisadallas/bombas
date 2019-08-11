@@ -31,9 +31,9 @@ public class RockNorAds : MonoBehaviour
         if (posX >= 1.5f && verVideo == true)        //evitamos que se reproduzca indefinidamente
         {
             verVideo = false;
-            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras
-                                       // playVideo.ShowRewardedVideo();  // play videoRecompensado                                         
-            publicidad.ShowRewardedVideo();
+            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras                                                                            
+          //  publicidad.ShowRewardedVideo(); // SI ADS!!     
+            ReplayLevel();                  //NO ADS!
          
         }
 
