@@ -30,9 +30,18 @@ public class RockX1Ads : MonoBehaviour
         if (posX >= 1.5f && verVideo == true)        //evitamos que se reproduzca indefinidamente
         {
             verVideo = false;
-            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras             
-           // publicidad.ShowRewardedVideo();     //ACTIVADOR ADS!!!    Descomentarear para Ads
-            ReplayLevel();                      //NO ADS!!              Comentarear Ads
+            DisparosExtras.extras = 0; //Reiniciamos los disparos Extras 
+            if (ActivadorAds.publicidad)
+            {
+                 publicidad.ShowRewardedVideo();     //ACTIVADOR ADS!!!    Descomentarear para Ads
+            }
+            else
+            {
+                ReplayLevel();                      //NO ADS!!              Comentarear Ads
+            }
+
+
+           
         }
 
     }

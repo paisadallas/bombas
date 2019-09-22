@@ -158,11 +158,10 @@ GameObject:
   - component: {fileID: 7303559724923331661}
   - component: {fileID: 7303559724923331660}
   - component: {fileID: 7303559724923331635}
-  - component: {fileID: 7303559724923331634}
   - component: {fileID: 7303559724923331633}
   - component: {fileID: 7303559724923331632}
-  - component: {fileID: 7303559724923331662}
   - component: {fileID: 75232890103900223}
+  - component: {fileID: 8641312875615423974}
   m_Layer: 0
   m_Name: '@burbuja'
   m_TagString: Untagged
@@ -268,22 +267,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemInterior: {fileID: 7303559724031401907}
   resistencia: 1
---- !u!58 &7303559724923331634
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7303559724923331638}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0d94ae9a1a9051d42ab234419ecab680, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.001613617, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.72320795
 --- !u!95 &7303559724923331633
 Animator:
   serializedVersion: 3
@@ -315,19 +298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d5af942dac4a244c9369fbf95defb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7303559724923331662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7303559724923331638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ced653eea918f94db9b779d16b8a8aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puntos: {fileID: 0}
 --- !u!82 &75232890103900223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -424,3 +394,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &8641312875615423974
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303559724923331638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 0d94ae9a1a9051d42ab234419ecab680, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7526973, y: 1.3604399}
+  serializedVersion: 2
+  m_Radius: 72.2822

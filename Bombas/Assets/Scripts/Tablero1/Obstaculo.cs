@@ -13,20 +13,22 @@ public class Obstaculo : MonoBehaviour
     [Range(0, 10)]
     public int NoPuntos;
     public bool destruir;
-
-    public ClasePadre clasePadre;
+    private ParticleSystem ps;
+  //  public ClasePadre clasePadre;
 
     private void Start()
     {
         pc2d = GetComponent<PolygonCollider2D>();
         destruir = false;   // poder de destruir al primer contacto! 
+        ps = GetComponent<ParticleSystem>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        destruir = clasePadre.estado;
+       // destruir = clasePadre.estado;
         rb2d = GetComponent<Rigidbody2D>();
         resistencia = resistencia - 1;
+        ps.Play();
        
         if (resistencia <= 0 || destruir)
         {          

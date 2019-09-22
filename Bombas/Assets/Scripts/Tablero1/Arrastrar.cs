@@ -11,7 +11,8 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     public GameObject disparador;
     private Transform transDisparador,canvas;
     public Contador miContador;
-    private float rangoX=3.0f;
+    [Range(0.0f,3.0f)]
+    public float rangoX=1.33f;
     private float rangoY;
        
     
@@ -30,6 +31,7 @@ public class Arrastrar : MonoBehaviour, IDragHandler
    
     {           
         Vector3 miPosicion = Camera.main.ScreenToWorldPoint(eventData.position);
+       
          
         coordenadasPosicion(miPosicion.x);
          
@@ -38,13 +40,14 @@ public class Arrastrar : MonoBehaviour, IDragHandler
     //Suelto el objeto
     private void OnMouseUp()
     {
-        delay = 0.38f;   // objeto ubicado con un delay (problema que surgio)
+        delay = 0.0f;   // objeto ubicado con un delay (problema que surgio) 0.38f
         canvas = GetComponent<Transform>();
         float posicion = canvas.position.x;
         transDisparador = disparador.GetComponent<Transform>();
-        transDisparador.position = new Vector2(posicion-delay, -7.0f);   //rango Y = -7.0
+        transDisparador.position = new Vector3(posicion-delay, rangoY,1000.0f);   //rango Y = -7.0
         disparador.SetActive(true);
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        this.gameObject.SetActive(false);
         miContador.resetContador();     
                                                                           
     }
@@ -60,6 +63,6 @@ public class Arrastrar : MonoBehaviour, IDragHandler
             posicionX = rangoX;
         }
 
-        transform.position = new Vector3(posicionX, rangoY);  
+        transform.position = new Vector3(posicionX, rangoY,1000.0f);  
     }
 }

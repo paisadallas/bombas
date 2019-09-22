@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Tone.unity
+    guid: c7010bbc35f717349ac0680d190d1579
+  - enabled: 1
     path: Assets/Scenes/MenuInicio.unity
     guid: d2a6e1496fafc2a4184d3cd0debfbe14
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TableroUno.unity
     guid: 9a7474a6706a2684a9aa8d9dba4adfc3
   m_configObjects: {}

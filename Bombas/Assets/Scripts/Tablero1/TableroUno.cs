@@ -13,8 +13,8 @@ public class TableroUno : MonoBehaviour
     public GameObject winnerCanvas;
     public GameObject lostCanvas;
     public GameObject panelTimeEnd;
-    private AudioSource audioTablero;  
-
+    private AudioSource audioTablero;
+    
     private void Start()
     {
         audioTablero = GetComponent<AudioSource>();
@@ -27,7 +27,8 @@ public class TableroUno : MonoBehaviour
         {
             audioTablero.Stop();
         }
-          
+        int disparos = TotalDisparos.total - (NoProyectiles.disparos) + DisparosExtras.extras;
+        perder(disparos);
     } 
            
     public void perder(int disparos)
@@ -35,7 +36,7 @@ public class TableroUno : MonoBehaviour
          if(disparos<= 0 && !winnerCanvas.activeSelf)    //evitamos ganar y perder a la vez
         {                  
                 lostCanvas.SetActive(true);
-                audioTablero.Stop();            
+            Mute();            
         }
     } 
           
@@ -45,7 +46,8 @@ public class TableroUno : MonoBehaviour
          if(Puntos.logros== TotalBurbujas && !lostCanvas.activeSelf)
         {
 
-           // Debug.Log("Haz Ganado!!");
+            // Debug.Log("Haz Ganado!!");
+            //  winnerCanvas.SetActive(true);             
             winnerCanvas.SetActive(true);
             audioTablero.Stop();
         }
@@ -53,7 +55,16 @@ public class TableroUno : MonoBehaviour
     }    
     public void PerderNivel()
     {
-        Debug.Log("Haz perdido Nivel");       
+        Debug.Log("Haz perdido Nivel");    
+    }
 
+   public void Mute()
+    {
+        audioTablero.volume=0.0f;
+    }
+
+    public void NoMute()
+    {
+        audioTablero.volume = 0.3f;
     }
 }

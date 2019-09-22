@@ -13,11 +13,11 @@ public class StartWinner : MonoBehaviour
     public GameObject star3;
 
     private AudioSource miAudio;
-    [Range(1,20)]
+    [Range(0,50)]
     public int puntosUno;
-    [Range(20, 30)]
+    [Range(0, 50)]
     public int puntosDos;
-    [Range(30, 40)]
+    [Range(0, 50)]
     public int puntosTres;
       
     void Update()
@@ -29,21 +29,36 @@ public class StartWinner : MonoBehaviour
     void totalStart()
     {
         if(Marcador.miMarcador >= puntosUno)
-        {
-           
+        {   
             star1.SetActive(true);
         }
         if (Marcador.miMarcador >= puntosDos)
         {
-            
-            star2.SetActive(true);
-           
+            StartCoroutine(Release(2));
+
+
         }
         if (Marcador.miMarcador >= puntosTres)
         {
-           
+
+            StartCoroutine(Release(3));
+        }
+
+    }
+
+    private IEnumerator Release(int start)
+    {
+        if (start == 2)
+        {
+            yield return new WaitForSeconds(0.5f);
+            star2.SetActive(true);
+        }
+        if (start == 3)
+        {
+            yield return new WaitForSeconds(1.0f);
             star3.SetActive(true);
         }
+
 
     }
 }

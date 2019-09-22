@@ -46,7 +46,8 @@ public class cauchera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      //  LineaRenderPosition();
+      
+                               //  LineaRenderPosition();
         if (press && cargado == true)
         {
             arrastrarBola();         
@@ -65,8 +66,8 @@ public class cauchera : MonoBehaviour
     {
         if (enableAudio)
         {
-            apuntando.Play();
-            enableAudio = false;
+          //  apuntando.Play();
+          //  enableAudio = false;
         } 
     }
 
@@ -86,10 +87,5 @@ public class cauchera : MonoBehaviour
         miSonido();
         press = true;
     }
-    // proyectil lanzado objeto lanzado
-    private void OnMouseUp()
-    {     
-        lr.enabled = false;       
-        apuntando.Stop();  // sonido      
-    }
+      
 }

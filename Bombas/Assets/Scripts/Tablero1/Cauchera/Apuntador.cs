@@ -8,17 +8,19 @@ public class Apuntador : MonoBehaviour
     
     public GameObject centroObjet;    
     public GameObject[] puntos;
+    public GameObject apuntador;
     private bool press;
     public bool cargado;
     [Range(-10,0)]
     public float posY;
+    public float desvidacion;
 
     public float posx;
     private void Start()
     {
         cargado = true;
-        press = true;            
-         
+        press = true;
+        press = false;
     }   
 
     private void Update()
@@ -52,8 +54,8 @@ public class Apuntador : MonoBehaviour
           
             puntos[0].transform.position = new Vector3(posX, posY, 0);
             puntos[1].transform.position = new Vector3(posX - xr, posY + yr, 0);
-            puntos[2].transform.position = new Vector3(posX - 2*xr, posY + yr + yr, 0);
-            puntos[3].transform.position = new Vector3(posX - 3.3f*xr, posY + yr + yr + yr, 0);
+            puntos[2].transform.position = new Vector3(posX - 2*xr, posY + yr + yr, 0);            //2
+            puntos[3].transform.position = new Vector3(posX -desvidacion*xr, posY + yr + yr + yr, 0);    //3.3f
           
         }           
        
@@ -63,6 +65,7 @@ public class Apuntador : MonoBehaviour
     {
 
         press = true;
+        apuntador.SetActive(true); //activamos apuntador
         puntos[0].SetActive(true);
         puntos[1].SetActive(true);
         puntos[2].SetActive(true);
@@ -76,5 +79,6 @@ public class Apuntador : MonoBehaviour
         puntos[1].SetActive(false);
         puntos[2].SetActive(false);
         puntos[3].SetActive(false);
+      
     }
 }

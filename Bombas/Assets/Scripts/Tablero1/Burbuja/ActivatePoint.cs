@@ -10,7 +10,7 @@ public class ActivatePoint : MonoBehaviour
     void Start()
     {
         cc2d = GetComponent<CircleCollider2D>();
-        puntos.SetActive(false); 
+      //  puntos.SetActive(false); 
     }
 
     // Update is called once per frame

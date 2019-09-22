@@ -9,7 +9,7 @@ public class PlatafAnimator : MonoBehaviour
     private Animator animator;
     private AudioSource miaudio;
     bool m_Play;
-
+    private ParticleSystem ps;
     public AudioClip impact;
 
     void Start()
@@ -17,6 +17,7 @@ public class PlatafAnimator : MonoBehaviour
         pc2d = GetComponent<PolygonCollider2D>();
         animator = gameObject.GetComponent<Animator>();
         miaudio = GetComponent<AudioSource>();
+        ps = GetComponent<ParticleSystem>();
         m_Play = true;
     }
 
@@ -26,6 +27,7 @@ public class PlatafAnimator : MonoBehaviour
         animator.SetBool("boof", pc2d.isTrigger);
         if (pc2d.isTrigger && m_Play)
         {
+            
             miaudio.Play();
             m_Play = false;
         }
@@ -34,5 +36,13 @@ public class PlatafAnimator : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         miaudio.PlayOneShot(impact, 0.2f);
+        int miResistencia = animator.GetInteger("resistencia");
+        if (miResistencia >2)
+        {
+            animator.Play("collision");
+        }       
+        ps.Play();
     }
+
+  
 }

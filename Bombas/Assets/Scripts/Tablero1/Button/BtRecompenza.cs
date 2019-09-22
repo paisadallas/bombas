@@ -8,35 +8,35 @@ using UnityEngine.EventSystems;
 public class BtRecompenza : MonoBehaviour, IDragHandler
 {
     private Transform canvas;
-    private float rangoY;
-    private float rangoX;
+    public float rangoY;
+    public float rangoX;
 
     private void Start()
     {
         canvas = GetComponent<Transform>();    //mi disparador
         rangoY = canvas.position.y;
-        rangoX = 2.5f;
+        rangoX = 1.23f;
         
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Vector3 miPosicion = Camera.main.ScreenToWorldPoint(eventData.position);       
-        coordenadasPosicion(miPosicion.x);
+        coordenadasPosicion(miPosicion);
     }
 
-    private void coordenadasPosicion(float posicionX)
+    private void coordenadasPosicion(Vector2 posicionX)
     {
-        if (posicionX <= -rangoX)
+        if (posicionX.x <= -rangoX)
         {
-            posicionX = -rangoX;
+            posicionX.x = -rangoX;
         }
-        if (posicionX >= rangoX)
+        if (posicionX.x >= rangoX)
         {
-            posicionX = rangoX;
+            posicionX.x = rangoX;
         }
 
-        transform.position = new Vector3(posicionX, rangoY,30);
+        transform.position = new Vector3(posicionX.x, rangoY,30);
     }
 
 

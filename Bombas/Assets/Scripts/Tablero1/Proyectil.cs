@@ -11,14 +11,14 @@ public class Proyectil : MonoBehaviour
     private SpringJoint2D sj2d;
     private bool press;
     private float relaseDealy;
-    private float disMax = 2f;      
-    private Transform coordenadaPiedra;      
+    private float disMax = 1.2f;   
+        
     public bool cargado; 
     private LineRenderer lr;
     private void Start()
     {
         sj2d.enabled = true;
-        coordenadaPiedra = GetComponent<Transform>();      
+             
         cargado = true;
         rb2d.constraints = RigidbodyConstraints2D.FreezePositionX;     //Evito que mi proyectil gire
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
@@ -88,7 +88,8 @@ public class Proyectil : MonoBehaviour
     private IEnumerator Release()
     {
         yield return new WaitForSeconds(relaseDealy);
-        sj2d.enabled = false;                
+        sj2d.enabled = false;
+        lr.enabled = false;
     }
     
 }

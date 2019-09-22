@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class LostLevel 
 {
-   public static int  no;
+   public static int  no = 0;
 
     public LostLevel()
     {

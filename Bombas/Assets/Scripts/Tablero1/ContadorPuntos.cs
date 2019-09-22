@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;  //agrego esta libreria
+using TMPro;
 
 
 //**** se aplica a mi canvas puntos ****
 public class ContadorPuntos : MonoBehaviour
 {
     
-    public Text totalMarcador;     
+      
+    public TextMeshProUGUI tMarcador;
     private float marcador;   
     private float tiempo = 0f;
     private int velocidad;
     void Start()
     {         
         marcador = Marcador.miMarcador;
-        totalMarcador.text = "" + tiempo;        
+        
+        tMarcador.text = "" + tiempo;
         velocidad = 20;
     }
 
@@ -30,10 +33,11 @@ public class ContadorPuntos : MonoBehaviour
         if (tiempo < Marcador.miMarcador)
         {
             tiempo += Time.deltaTime*velocidad;
-            // marcador = tiempo.ToString("f0");         
+          //   marcador = tiempo.ToString("f0");         
         }
       
-        totalMarcador.text = " " + tiempo.ToString("f0");  
+       
+        tMarcador.text = " " + tiempo.ToString("f0");
     }   
    
 }

@@ -5,12 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ReplayAds : MonoBehaviour
 {
+
     private Transform miPosicion;
+    private Transform trf;
     public bool verVideo;
-    private float posX;
+    public float posX;
+    public GameObject ptoLlegada;
+    public AdsRecompenzado playVideo;
+    Scene scene;
     private void Start()
     {
         miPosicion = GetComponent<Transform>();
+        trf = ptoLlegada.GetComponent<Transform>();
+        scene = SceneManager.GetActiveScene();
         verVideo = true;
     }
 
@@ -23,22 +30,23 @@ public class ReplayAds : MonoBehaviour
     private void ChecarPosicion()
     {
 
-        if (posX >= 1.5f && verVideo == true)        //evitamos que se reproduzca indefinidamente
+        if (posX+0.2f >= trf.position.x && verVideo == true)        //evitamos que se reproduzca indefinidamente
         {
             verVideo = false;
             DisparosExtras.extras = 0; //Reiniciamos los disparos Extras
-                                       // playVideo.ShowRewardedVideo();  // play videoRecompensado
+                   
+            playVideo.ShowRewardedVideo();  // play videoRecompensado                     
             ReplayLevel();
-        }
-
+            
+        }  
     }
 
-    private void ReplayLevel()
+    public void ReplayLevel()
     {
-        SceneManager.LoadScene("TableroUno");    //Cargo mi escena de nuevo
+        SceneManager.LoadScene(scene.name);    //Cargo mi escena de nuevo
         NoProyectiles.disparos = 0;   // Reinicio mis diparos
         Puntos.logros = 0;              //Reinicio Puntos
-        Marcador.miMarcador = 0;
-        LostLevel perdeLevel = new LostLevel();   //NO sumamos nada
+        Marcador.miMarcador = 0;       // reinicio mi marcador
+        LostLevel perdeLevel = new LostLevel();   //Sumamos un leves Lost
     }
 }

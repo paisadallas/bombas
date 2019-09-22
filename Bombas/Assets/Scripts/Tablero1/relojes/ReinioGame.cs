@@ -12,11 +12,12 @@ public class ReinioGame : MonoBehaviour
     private bool estado;
     [Range(0, 10)]
     public float TimeReplay;
-
+    private Scene scene;
     private void Start()
     {
         tiempo = 0;
         estado = true;
+        scene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class ReinioGame : MonoBehaviour
 
     public void ReplayLevel()
     {
-        SceneManager.LoadScene("TableroUno");    //Cargo mi escena de nuevo
+        SceneManager.LoadScene(scene.name);    //Cargo mi escena de nuevo
         NoProyectiles.disparos = 0;   // Reinicio mis diparos
         Puntos.logros = 0;              //Reinicio Puntos
         Marcador.miMarcador = 0;

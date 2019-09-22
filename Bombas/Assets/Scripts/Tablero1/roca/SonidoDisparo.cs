@@ -6,11 +6,13 @@ public class SonidoDisparo : MonoBehaviour
 {
 
     public AudioClip disparo;
+    public AudioSource audioData;
     private AudioSource sonido;
     // Start is called before the first frame update
     void Start()
     {
-        sonido = GetComponent<AudioSource>(); 
+        sonido = GetComponent<AudioSource>();
+        audioData = GetComponent<AudioSource>();
     }
        
     // proyectil lanzado objeto lanzado
@@ -18,5 +20,11 @@ public class SonidoDisparo : MonoBehaviour
     {
       //  Debug.Log("Solatado");
         sonido.PlayOneShot(disparo, 1.0F);
+        audioData.Stop();
+    }
+
+    private void OnMouseDown()
+    {
+        audioData.Play();
     }
 }
